@@ -1,0 +1,396 @@
+<section>
+    VmInclude:__COMPONENT__/toolbar/back_save.html
+	<form id=F__ID>
+        <table id=tb__ID style='width:600px;'>
+            <colgroup>
+                <col class=colA style='width:350px' />
+                <col class=colA style='width:100px' />
+                <col class=ColA style='width:100px'/>
+                <col />
+            </colgroup>
+
+            <tr><td colspan=5 class='header__ID'>Inclusion Exclusion Criteria</td></tr>
+
+            <tr id=tr_participant__ID style='display:none'><td colspan=5 data-id=Participant data-custom=1>
+                <input name=Participant  id=Participant__ID  type=text class=sel__ID placeholder='select a partcipant...'/>
+                <input name=Participant_uid id=Participant_uid__ID type=text readonly style="width:50px;color:#ccc;" />
+                <u style='cursor:pointer;float:right;' id=Participant_r__ID>Remove</u>
+            </td></tr>
+
+            <tr><td colspan=5 class=' '>
+            <tr><td class=subheader__ID >Inclusion</td><td class=subheader__ID>Yes</td><td class=subheader__ID>No</td><td class=subheader__ID> Comment</td></tr>
+
+<!--Consent-->
+            <tr><td data-id=Consent data-custom=1>Able to give informed consent</td>
+                        <td>
+                             <input type=radio value=Yes name=Consent />
+                         </td>
+                         <td>
+                             <input type=radio value=No name=Consent />
+                         </td>
+
+                         <td><input class=input_box_small__ID type=text  data-custom=1 data-id=Consent_comment  name=Consent_comment id=Consent_comment  /></td></tr>
+<!--English Fluent-->
+             <tr><td data-id=English data-custom=1>Fluent in English</td>
+                        <td>
+                             <input type=radio value=Yes name=English />
+                         </td>
+                         <td>
+                             <input type=radio value=No name=English />
+                         </td>
+
+                        <td><input class=input_box_small__ID type=text  data-custom=1 data-id=English_comment  name=English_comment  id=English_comment  /></td></tr>
+<!--Age-->
+            <tr><td  data-id=Age data-custom=1>Ages 18-65 old</td>
+                <td>
+                <input type=radio value=Yes name=Age />
+                </td>
+                <td>
+                <input type=radio value=No name=Age />
+                </td>
+                <td><input class=input_box_small__ID type=text  data-custom=1 data-id=Age_comment  name=Age_comment  id=Age_comment  /></td></tr>
+<!--Normal Sleep Wake Cycle-->
+
+            <tr><td data-id=sleep data-custom=1>Clinically normal sleep/wake schedule (defined by >6 hours of sleep)</td>
+              <td>
+                 <input type=radio value=Yes name=sleep  />
+             </td>
+             <td>
+                 <input type=radio value=No name=sleep/>
+             </td>
+             <td><input class=input_box_small__ID type=text  data-custom=1 data-id=sleep_comment  name=sleep_comment  id=sleep_comment  /></td></tr>
+
+
+<!--Sleep Diary Scores-->
+<tr><td data-id=sleepdiary data-custom=1>Average score of <3 ("Not refreshed") on the 2 week Karolinska Sleep Diary on Question regarding "Feel refreshed after awakening"</td>
+            <td>
+                 <input type=radio value=Yes name=sleepdiary />
+             </td>
+             <td>
+                 <input type=radio value=No name=sleepdiary />
+             </td>
+             <td><input class=input_box_small__ID type=text  data-custom=1 data-id=sleepdiary_comment  name=sleepdiary_comment  id=sleepdiary_comment  /></td></tr>
+<!--PSQI-->
+<tr><td data-id=psqi data-custom=1>Overall score of >5 and describes their overall slepe quality as ≥2 on the Pittsburgh Sleep Quality Index (PSQI)</td>
+             <td>
+                 <input type=radio value=Yes name=psqi />
+             </td>
+             <td>
+                 <input type=radio value=No name=psqi />
+             </td>
+             <td><input class=input_box_small__ID type=text  data-custom=1 data-id=psqi_comment  name=psqi_comment  id=psqi_comment  /></td></tr>
+
+<tr><td class=subheader__ID ><b>For CFS group ONLY</b></td><td class=subheader__ID>Yes</td><td class=subheader__ID>No</td><td class=subheader__ID>Comment</td></tr>
+<!--MFSI-->
+<tr><td data-id=mfsi data-custom=1> Scored ≥13 on the Multidimensional fatigue symptom inventory (MFSI)</td>
+            <td>
+                 <input type=radio value=Yes name=mfsi />
+             </td>
+             <td>
+                 <input type=radio value=No name=mfsi />
+             </td>
+             <td><input class=input_box_small__ID type=text  data-custom=1 data-id=mfsi_comment  name=mfsi_comment  id=mfsi_comment  /></td></tr>
+
+             <tr><td data-id=SF36 data-custom=1>Present with functional impairment scores on the SF-36 (≤70 Physical function, ≤50 role physical,≤75 social function or ≤66 role emotional subscales)</td>
+                         <td>
+                              <input type=radio value=Yes name=SF36 />
+                          </td>
+                          <td>
+                              <input type=radio value=No name=SF36 />
+                          </td>
+
+                          <td><input class=input_box_small__ID type=text  data-custom=1 data-id=SF36_comment  name=SF36_comment id=SF36_comment  /></td></tr>
+
+
+            <!--<tr><td>Diagnosed with Obstructive Sleep Apnea (AHI >15)</td><td><input type=checkbox class=modified_checkbox__ID data-custom=1 data-id=OSA15 name=OSA15 id=OSA15 /></td><td><input           class=input_box_small__ID  type=text  data-custom=1 data-id=OSA15_comment  name=OSA15_comment  id=OSA15_comment  /></td></tr-->
+
+            <!--EXCLUSIONS- NEED TO FIX - ONE ANSWERS ONLY-->
+            <tr><td colspan=5 class=' '>
+
+
+            <tr><td class=subheader__ID>Exclusion</td><td class=subheader__ID>Yes</td><td class=subheader__ID>No</td><td class=subheader__ID>Comment</td></tr>
+
+<tr><td data-id=sleepdisorder data-custom=1>Diagnosed with a Sleep disorder <b>(AHI>10;PLM>5;Sleep Latency <15 minutes and DSPD)</b></td>
+             <td>
+                 <input type=radio value=Yes name=sleepdisorder />
+             </td>
+             <td>
+                 <input type=radio value=No name=sleepdisorder />
+             </td>
+            <td><input class=input_box_small__ID type=text  data-custom=1 data-id=sleepdisorder_comment  name=sleepdisorder_comment  id=sleepdisorder_comment  /></td></tr>
+
+<tr><td data-id=MRI data-custom=1>Able to participate in MRS and HD-EEG tasks</td>
+             <td>
+                 <input type=radio value=Yes name=MRI />
+             </td>
+             <td>
+                 <input type=radio value=No name=MRI />
+             </td>
+            <td><input class=input_box_small__ID type=text  data-custom=1 data-id=MRI_comment  name=MRI_comment  id=MRI_comment  /></td></tr>
+
+
+<tr><td data-id=DASS data-custom=1>Overall scores of <b>Depression >19; Anxiety >14; Stress >25</b> on Depression Anxiety Stress Scales (DASS-21) </td>
+             <td>
+                 <input type=radio value=Yes name=DASS />
+             </td>
+             <td>
+                 <input type=radio value=No name=DASS />
+             </td>
+            <td><input class=input_box_small__ID type=text  data-custom=1 data-id=DASS_comment  name=DASS_comment  id=DASS_comment  /></td></tr>
+
+<tr><td data-id=CNS data-custom=1>Centrally Active Agents</td>
+             <td>
+                 <input type=radio value=Yes name=CNS />
+             </td>
+             <td>
+                 <input type=radio value=No name=CNS />
+             </td>
+            <td><input class=input_box_small__ID type=text  data-custom=1 data-id=CNS_comment  name=CNS_comment  id=CNS_comment  /></td></tr>
+
+<tr><td data-id=Alcohol data-custom=1>Heavy Alcohol consumption (>20g daily) </td>
+             <td>
+                 <input type=radio value=Yes name=Alcohol />
+             </td>
+             <td>
+                 <input type=radio value=No name=Alcohol />
+             </td>
+            <td><input class=input_box_small__ID type=text  data-custom=1 data-id=Alcohol_comment  name=Alcohol_comment  id=Alcohol_comment  /></td></tr>
+
+
+<tr><td data-id=Pregnant data-custom=1>Pregnant</td>
+            <td>
+                 <input type=radio value=Yes name=Pregnant />
+             </td>
+             <td>
+                 <input type=radio value=No name=Pregnant />
+             </td>
+            <td><input class=input_box_small__ID type=text  data-custom=1 data-id=Pregnant_comment  name=Pregnant_comment  id=Pregnant_comment  /></td></tr>
+
+            <!--tr><td>Female</td><td><input type=checkbox class=modified_checkbox__ID data-custom=1 data-id=Female name=Female id=Female /></td><td><input class=input_box_small__ID type=text  data-custom=1 data-id=Fesleep_comment  name=Fesleep_comment  id=Fesleep_comment  /></td></tr-->
+
+
+            <!--tr><td>Diagnosed with Dementia</td><td><input type=checkbox class=modified_checkbox__ID data-custom=1 data-id=Dementia name=Dementia id=Dementia /></td><td><input class=input_box_small__ID type=text  data-custom=1 data-id=Dementia_comment  name=Dementia_comment  id=Dementia_comment  /></td></tr-->
+
+<tr><td data-id=Shiftworker data-custom=1>Shiftworker</td>
+             <td>
+                 <input type=radio value=Yes name=Shiftworker />
+             </td>
+             <td>
+                 <input type=radio value=No name=Shiftworker />
+             </td>
+            <td><input class=input_box_small__ID type=text  data-custom=1 data-id=Shiftworker_comment  name=Shiftworker_comment  id=Shiftworker_comment  /></td></tr>
+
+ <tr><td class=subheader__ID></td><td class=subheader__ID>Yes</td><td class=subheader__ID>No</td><td class=subheader__ID>Reason</td></tr>
+            <td>Other reasons why this participant is not eligible?</td><td>
+                 <input type=radio value=Yes name=Reason/>
+             </td>
+             <td>
+                 <input type=radio value=No name=Reason />
+             </td>
+
+             <td><input class=input_box_small__ID type=text  data-custom=1 data-id=Reason_comment  name=Reason_comment  id=Reason_comment /></td></tr>
+
+            <!--tr><td>Low Self Effiacy Measures in Sleep Apnea (SEMSA)</td><td><input type=checkbox class=modified_checkbox__ID data-custom=1 data-id=Lowsemsa name=Lowsemsa id=Lowsemsa /></td><td><input class=input_box_small__ID type=text  data-custom=1 data-id=Lowsemsa_comment  name=Lowsemsa_comment  id=Lowsemsa_comment  /></td></tr-->
+        </table><br>&nbsp;<a id=save2__ID class=save_and_back__ID >Save &amp; Back</a>
+    </form>
+</section>
+<script>
+    function F__ID(){
+        //----------------------------------
+        VmInclude:__COMPONENT__/grid/form.v3.js
+        VmInclude:__CURRENT_PATH__/task.form.js
+        _json='';
+        //----------------------------------
+        $('#D__ID').on('load',function(){
+            _init();
+            _field_process();
+            _task_fields=$vm.vm['__ID'].op.grid_to_form_parameters.task_fields;
+            _set_participant_field();
+            custom_field_process();
+        })
+        //----------------------------------
+        var custom_field_process=function(){
+            $('#tb__ID tbody *[data-custom=1]').each(function(){
+                var field=$(this).attr('data-id');
+                switch(field){
+                    case "Participant":
+                        $(this).find("input[name='"+field+"']").val(_records[I].Participant);
+                        $(this).find("input[name='"+field+"_uid']").val(_records[I].Participant_uid);
+                    break;
+                    //Radio buttons
+                   //ase 'menstral_stop':
+                    //case 'hysterectomy':
+                    //case 'pregnancy':
+                    //case 'hrt':
+                    //case 'hrt_current':
+                    //case 'cycle_consistent':
+                    $('#tb__ID').find("input[name='"+field+"'][value='"+_records[I][field]+"']").prop('checked', true);
+                    $('#tb__ID').find("input[name='"+field+")_']").on('click',function(){
+                     _set_value(this.value,_records,I,field);
+                        })
+                    break;
+                    //radio button list
+                    case 'Consent':
+                    case 'English':
+                    case 'Age':
+                    case 'sleep':
+                    case 'sleepdiary':
+                    case 'psqi':
+                    case 'mfsi':
+                    case 'SF36':
+                    case 'sleepdisorder':
+                    case 'MRI':
+                    case 'DASS':
+                    case 'CNS':
+                    case 'Alcohol':
+                    case 'Pregnant':
+                    case 'Shiftworker':
+                    case 'Reason':
+
+
+
+                        $('#tb__ID').find("input[name='"+field+"'][value='"+_records[I][field]+"']").prop('checked', true);
+                        $('#tb__ID').find("input[name='"+field+"']").on('click',function(){
+                            _set_value(this.value,_records,I,field);
+                        })
+                    break;
+
+                        if(_records[I][field]=="1" || _records[I][field]=="True" || _records[I][field]=="on" ) $(this).prop('checked', true);
+                        $(this).on('click', function(){
+                            if($(this).prop("checked") == true)   _set_value("1",_records,I,field);
+                            else                                  _set_value("0",_records,I,field);
+                        });
+                    break;
+
+                    //Text
+                    case 'Consent_comment':
+                    case 'English_comment':
+                    case 'Age_comment':
+                    case 'sleep_comment':
+                    case 'sleepdiary_comment':
+                    case 'psqi_comment':
+                    case 'mfsi_comment':
+                    case 'SF36_comment':
+                    case 'sleepdisorder_comment':
+                    case 'MRI_comment':
+                    case 'DASS_comment':
+                    case 'CNS_comment':
+                    case 'Alcohol_comment':
+                    case 'Pregnant_comment':
+                    case 'Shiftworker_comment':
+                    case 'Reason_comment':
+
+                        $(this).val(_records[I][field]);
+                        $(this).on('change', function(){
+                            _set_value($(this).val(),_records,I,field);
+                        });
+                    break;
+                }
+
+            });
+        }
+        //----------------------------------
+        _before_submit=function(record,dbv){
+            return _set_status_and_participant(record,dbv);
+        }
+        //----------------------------------
+        _before_submit_form=function(){
+        }
+    }
+</script>
+<style>
+    VmInclude:__COMPONENT__/toolbar/toolbar.css
+    VmInclude:__COMPONENT__/grid/form.css
+    #tb__ID tr td:nth-child(2),
+    #tb__ID tr td:nth-child(3),
+    #tb__ID tr td:nth-child(4),
+    #tb__ID tr td:nth-child(5),
+    #tb__ID tr td:nth-child(6)
+    {
+        text-align:center;
+        padding: 5px;
+        vertical-align: middle;
+    }
+    .modified_radio__ID {
+    	-webkit-appearance: none;
+    	-moz-appearance: button;
+    /*	background-color: #fafafa;*/
+    	border: 1px solid #000;
+    	width:22px;
+    	height:26px;
+    /*	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);*/
+    	padding: 0px;
+    	border-radius: 3px;
+    	display: inline-block;
+    	position: absolute;
+    	opacity:0.15;
+      vertical-align:middle;
+    }
+    .modified_radio__ID:active, .modified_radio__ID:checked:active {
+    	/*box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);*/
+    }
+
+
+    .modified_radio__ID:checked {
+        -moz-appearance: button;
+    	background-color: #554055;
+    	border: 1px solid #adb8c0;
+    /*	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);*/
+    	color: #99a1a7;
+    	opacity:0.9;
+    }
+    .modified_radio__ID:checked:after {
+    	/*content: '\2714';*/
+    	font-size: 14px;
+    	position: absolute;
+    	top: 0px;
+    	left: 3px;
+    	color: #99a1a7;
+    }
+    .modified_radio__ID:active, .modified_radio__ID:checked:active {
+    	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+    }
+    .modified_number__ID{
+        margin-left:-18px;
+        font-size:14pt;
+        vertical-align:middle;
+    }
+    .input_box_small__ID{
+        border: 1px solid #adb8c0!important;
+        width:100px!important;
+    }
+    .input_box__ID{
+        border: 1px solid #adb8c0!important;
+        width:99%!important;
+    }
+    .modified_checkbox__ID {
+    	-webkit-appearance: none;
+    	-moz-appearance: checkbox;
+    	background-color: #fafafa;
+    	border: 1px solid #cacece;
+    	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    	padding: 9px;
+    	border-radius: 3px;
+    	display: inline-block;
+    	position: absolute;
+    }
+    .modified_checkbox__ID:active, .modified_checkbox__ID:checked:active {
+    	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .modified_checkbox__ID:checked {
+        -moz-appearance: checkbox;
+    	background-color: #e9ecee;
+    	border: 1px solid #adb8c0;
+    	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    	color: #99a1a7;
+    }
+    .modified_checkbox__ID:checked:after {
+    	content: '\2714';
+    	font-size: 14px;
+    	position: absolute;
+    	top: 0px;
+    	left: 3px;
+    	color: #99a1a7;
+    }
+</style>

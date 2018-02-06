@@ -1,0 +1,121 @@
+<section>
+    VmInclude:__COMPONENT__/toolbar/back_save.html
+	<form id=F__ID>
+        <table id=tb__ID style='width:770px;'>
+            <colgroup><col style='width:400px' />
+                <col style='width:80px;text-align:center!important' />
+                <col style='width:80px' />
+                <col style='width:80px' />
+                <col style='width:80px' />
+
+            </colgroup>
+
+            <tr><td colspan=5 class='header__ID'>Chalder's Fatigue Scale</td></tr>
+
+            <tr id=tr_participant__ID style='display:none'><td colspan=5 data-id=Participant data-custom=1>
+                <input name=Participant  id=Participant__ID  type=text class=sel__ID placeholder='select a partcipant...'/>
+                <input name=Participant_uid id=Participant_uid__ID type=text readonly style="width:50px;color:#ccc;" />
+                <u style='cursor:pointer;float:right;' id=Participant_r__ID>Remove</u>
+            </td></tr>
+
+            <tr><td colspan=5 ><br>We would like to know more about any problem you have had with feeling tired, weak or lacking in energy in the last month. Please answer all the questions by ticking the answer which applies to you most closely. If you have been feeling tired for a long while, then compare yourself to how you felt when you were last well. Please tick only one box per line.
+            </i></b><br><br>
+            </td></tr>
+
+            <tr><td></td><td class=C__ID___answ> Less than usual </td><td class=C__ID___answ>No more than usual</td><td class=C__ID___answ>More than usual</td><td class=C__ID___answ>Much more than usual</td></tr>
+            <tr><td data-id=Chalder_1 data-custom=1>Do you have problems with tiredness? </td><td><input type=radio value=0 name=Chalder_1  /></td><td><input type=radio value=1 name=Chalder_1   /></td><td><input type=radio value=2 name=Chalder_1   /></td><td><input type=radio value=3 name=Chalder_1 />  </td></tr>
+            <tr><td data-id=Chalder_2 data-custom=1>Do you  need to rest more? </td><td><input type=radio value=0 name=Chalder_2   /></td><td><input type=radio value=1 name=Chalder_2   /></td><td><input type=radio value=2 name=Chalder_2   /></td><td><input type=radio value=3 name=Chalder_2   />   </td></tr>
+            <tr><td data-id=Chalder_3 data-custom=1>Do you feel sleepy or drowsy?</td><td><input type=radio value=0 name=Chalder_3   /></td><td><input type=radio value=1 name=Chalder_3   /></td><td><input type=radio value=2 name=Chalder_3   /></td><td><input type=radio value=3 name=Chalder_3   /></td></tr>
+            <tr><td data-id=Chalder_4 data-custom=1>Do you have problems starting things?</td><td><input type=radio value=0 name=Chalder_4 /></td><td><input type=radio value=1 name=Chalder_4   /></td><td><input type=radio value=2 name=Chalder_4   /></td><td><input type=radio value=3 name=Chalder_4   /></td></tr>
+            <tr><td data-id=Chalder_5 data-custom=1>Do you lack energy?</td><td><input type=radio value=0 name=Chalder_5 /></td><td><input type=radio value=1 name=Chalder_5   /></td><td><input type=radio value=2 name=Chalder_5   /></td><td><input type=radio value=3 name=Chalder_5   /></td></tr>
+            <tr><td data-id=Chalder_6 data-custom=1>Do you have less strength in your muscles?</td><td><input type=radio value=0 name=Chalder_6 /></td><td><input type=radio value=1 name=Chalder_6   /></td><td><input type=radio value=2 name=Chalder_6   /></td><td><input type=radio value=3 name=Chalder_6   /></td></tr>
+            <tr><td data-id=Chalder_7 data-custom=1>Do you have difficulties concentrating?</td><td><input type=radio value=0 name=Chalder_7 /></td><td><input type=radio value=1 name=Chalder_7   /></td><td><input type=radio value=2 name=Chalder_7   /></td><td><input type=radio value=3 name=Chalder_7   /></td> </td></tr>
+            <tr><td data-id=Chalder_8 data-custom=1>Do you make slips of the tongue when speaking?</td><td><input type=radio value=0 name=Chalder_8  /></td><td><input type=radio value=1 name=Chalder_8   /></td><td><input type=radio value=2 name=Chalder_8   /></td><td><input type=radio value=3 name=Chalder_8   /></td></tr>
+            <tr><td></td><td class=C__ID___answ> Better than usual </td><td class=C__ID___answ>No worse than usual</td><td class=C__ID___answ>Worse than usual</td><td class=C__ID___answ>Much worse than usual</td></tr>
+            <tr><td data-id=Chalder_9 data-custom=1>How is your memory?</td><td><input type=radio value=0 name=Chalder_9  /></td><td><input type=radio value=1 name=Chalder_9   /></td><td><input type=radio value=2 name=Chalder_9   /></td><td><input type=radio value=3 name=Chalder_9   /></td></tr>
+
+          </table><br>&nbsp;<a id=save2__ID class=save_and_back__ID >Save &amp; Back</a>
+    </form>
+</section>
+<script>
+    function F__ID(){
+        //----------------------------------
+        VmInclude:__COMPONENT__/grid/form.v3.js
+        VmInclude:__CURRENT_PATH__/task.form.js
+        _json='';
+        //----------------------------------
+        $('#D__ID').on('load',function(){
+            _init();
+            _field_process();
+            _task_fields=$vm.vm['__ID'].op.grid_to_form_parameters.task_fields;
+            _set_participant_field();
+            custom_field_process();
+        })
+        //----------------------------------
+        var custom_field_process=function(){
+            $('#tb__ID td[data-custom=1]').each(function(){
+                var field=$(this).attr('data-id');
+                switch(field){
+                    case "Participant":
+                        $(this).find("input[name='"+field+"']").val(_records[I].Participant);
+                        $(this).find("input[name='"+field+"_uid']").val(_records[I].Participant_uid);
+                    break;
+                    case "Chalder_1":
+                    case "Chalder_2":
+                    case "Chalder_3":
+                    case "Chalder_4":
+                    case "Chalder_5":
+                    case "Chalder_6":
+                    case "Chalder_7":
+                    case "Chalder_8":
+                    case "Chalder_9":
+
+                        $('#tb__ID').find("input[name='"+field+"'][value='"+_records[I][field]+"']").prop('checked', true);
+                        $('#tb__ID').find("input[name='"+field+"']").on('click',function(){
+                            _set_value(this.value,_records,I,field);
+                        })
+                    break;
+                }
+            })
+        }
+        _before_submit_form=function(){
+            if( $('#tb__ID').find('input[name=Chalder_1]:checked').val()===undefined){ alert("Please answer question 1"); return false; }
+            if( $('#tb__ID').find('input[name=Chalder_2]:checked').val()===undefined){ alert("Please answer question 2"); return false; }
+            if( $('#tb__ID').find('input[name=Chalder_3]:checked').val()===undefined){ alert("Please answer question 3"); return false; }
+            if( $('#tb__ID').find('input[name=Chalder_4]:checked').val()===undefined){ alert("Please answer question 4"); return false; }
+            if( $('#tb__ID').find('input[name=Chalder_5]:checked').val()===undefined){ alert("Please answer question 5"); return false; }
+            if( $('#tb__ID').find('input[name=Chalder_6]:checked').val()===undefined){ alert("Please answer question 6"); return false; }
+            if( $('#tb__ID').find('input[name=Chalder_7]:checked').val()===undefined){ alert("Please answer question 7"); return false; }
+            if( $('#tb__ID').find('input[name=Chalder_8]:checked').val()===undefined){ alert("Please answer question 8"); return false; }
+            if( $('#tb__ID').find('input[name=Chalder_9]:checked').val()===undefined){ alert("Please answer question 9"); return false; }
+
+
+          var v1=parseInt($('#tb__ID').find('input[name=Chalder_1]:checked').val());
+        	var v2=parseInt($('#tb__ID').find('input[name=Chalder_2]:checked').val());
+        	var v3=parseInt($('#tb__ID').find('input[name=Chalder_3]:checked').val());
+        	var v4=parseInt($('#tb__ID').find('input[name=Chalder_4]:checked').val());
+        	var v5=parseInt($('#tb__ID').find('input[name=Chalder_5]:checked').val());
+        	var v6=parseInt($('#tb__ID').find('input[name=Chalder_6]:checked').val());
+        	var v7=parseInt($('#tb__ID').find('input[name=Chalder_7]:checked').val());
+        	var v8=parseInt($('#tb__ID').find('input[name=Chalder_8]:checked').val());
+        	var v9=v1+v2+v3+v4+v5+v6+v7+v8;
+            _records[I].Chalder=v9;
+            return true;
+        }
+        //----------------------------------
+    }
+</script>
+<style>
+    VmInclude:__COMPONENT__/toolbar/toolbar.css
+    VmInclude:__COMPONENT__/grid/form.css
+    #tb__ID tr td:nth-child(2),
+    #tb__ID tr td:nth-child(3),
+    #tb__ID tr td:nth-child(4),
+    #tb__ID tr td:nth-child(5),
+    #tb__ID tr td:nth-child(6)
+
+    {
+        text-align: center;
+        padding-top: 5px;
+    }
+</style>

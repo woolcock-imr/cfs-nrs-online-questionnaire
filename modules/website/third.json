@@ -1,0 +1,6 @@
+{
+	"modules":
+	{
+		"cpaphdeeg-online-home":	  {"url":"modules/website/task/home.html", "name_for_search":"CPAPHDEEG online questionnaire"}
+	}
+}

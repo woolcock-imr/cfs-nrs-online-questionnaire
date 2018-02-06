@@ -1,0 +1,568 @@
+<section>
+    VmInclude:__COMPONENT__/toolbar/back_save.html
+</section>
+<section class="w3s">
+
+    <form id=F__ID class="w3-padding-0 w3-margin-0 ">
+          <div class="w3-container w3-quarter"></div>
+          <div class="w3-container w3-padding w3-grey w3-half w3-center">
+            <h2>Short Form Health Survey (SF-36)</h2>
+            </div>
+
+            <div class="w3-container w3-padding w3-content w3-medium ">
+            </div>
+
+            <div class="w3-container w3-content w3-row ">
+            <div  class="w3-container">
+            <div class="w3-container  w3-half" id=tr_participant__ID style='display:none' data-id=Participant data-custom=1>
+            <input class="w3-input" name=Participant  id=Participant__ID  type=text placeholder='select a partcipant...' />
+            </div>
+            <div class="w3-container w3-quarter w3-padding-24">
+            <input class="w3-border-0 w3-text-grey w3-center" name=Participant_uid id=Participant_uid__ID type=text readonly  />
+            </div>
+                <div class="w3-container w3-quarter">
+                <u  class="w3-btn w3-white " id=Participant_r__ID>Remove</u>
+            </div>
+            </div>
+
+                <div class=" w3-container w3-padding" >
+
+                    <!--hr style="border-top:5px solid #888;"-->
+                </div>
+
+                      <!-- Questions start here-->
+
+                <div class="w3-container w3-padding w3-border w3-border-dark-grey w3-bottombar">
+                    <div >
+                        <br>1. In general, would you say your health is:
+                    </div>
+                    <div class="w3-container " data-id=SF36_1 data-custom=1 >
+                        <input class="w3-radio w3-padding-4" type="radio" name="SF36_1" value="1" \> 1 - Excellent
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_1 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_1" value="2" \> 2 - Very good
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_1 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_1" value="3" \> 3 - Good
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_1 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_1" value="4" \> 4 - Fair
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_1 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_1" value="5" \> 5 - Poor
+                    </div>
+                </div>
+                <div class=" w3-container " >
+                    <!--hr style="border-top:5px solid #888;"-->
+                </div>
+                <div class="w3-container w3-padding w3-border w3-border-dark-grey w3-bottombar">
+                    <div>
+                        <br>2. <b>Compared to one year ago</b>, how would you rate your health in general <b>now</b>?
+                    </div>
+                    <div class="w3-container " data-id=SF36_2 data-custom=1 >
+                        <input class="w3-radio w3-padding-4" type="radio" name="SF36_2" value="1" \> 1 - Much better now than one year ago
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_2 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_2" value="2" \> 2 -  Somewhat better now than one year ago
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_2 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_2" value="3" \> 3 - About the same
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_2 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_2" value="4" \> 4 - Somewhat worse now than one year ago
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_2 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_2" value="5" \> 5 - Much worse now than one year ago
+                    </div>
+                </div>
+                <div class=" w3-container " >
+                    <!--hr style="border-top:5px solid #888;"-->
+                </div>
+                <div class=" w3-border w3-border-dark-grey w3-bottombar">
+                <div  class="w3-padding">
+                        The following items are about activities you might do during a typical day. Does <b>your health now limit you</b> in these activities? If so, how much?
+                </div>
+                <div  class="w3-container" style='min-width:500px'>
+                    <div  class="w3-twothird w3-container w3-padding">
+                        <table class='w3-table w3-centered'>
+                            <colgroup><col></col><col style='width:70px'></col><col style='width:70px'></col><col style='width:70px'></col></colgroup>
+                            <tr><td></td><td>Yes, limited a lot</td><td>Yes, limited a little</td><td>No, not limited at all</td></tr>
+                            <tr data-id=SF36_3 data-custom=1 ><td class=w3-left-align>3. <b>Vigorous activities</b>, such as running, lifting heavy objects, participating in strenuous sports</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_3" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_3"  value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_3"  value="3" \> 3</td>
+                            </tr>
+                            <tr data-id=SF36_4 data-custom=1><td class=w3-left-align>4. <b>Moderate activities</b>, such as moving a table, pushing a vacuum cleaner, bowling, or playing golf</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_4" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_4"  value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_4"  value="3" \> 3</td>
+                            </tr>
+                            <tr data-id=SF36_5 data-custom=1><td class=w3-left-align>5. Lifting or carrying groceries</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_5" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_5"  value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_5"  value="3" \> 3</td>
+                            </tr>
+                            <tr data-id=SF36_6 data-custom=1><td class=w3-left-align>6. Climbing <b>several</b> flights of stairs</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_6" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_6"  value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_6"  value="3" \> 3</td>
+                            </tr>
+                            <tr data-id=SF36_7 data-custom=1><td class=w3-left-align>7. Climbing <b>one</b> flight of stairs</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_7" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_7"  value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_7"  value="3" \> 3</td>
+                            </tr>
+                            <tr data-id=SF36_8 data-custom=1><td class=w3-left-align>8. Bending, kneeling, or stooping</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_8" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_8"  value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_8"  value="3" \> 3</td>
+                            </tr>
+                            <tr data-id=SF36_9 data-custom=1><td class=w3-left-align>9. Walking <b>more than a mile</b></td>
+                                <td><input class="w3-radio" type="radio" name="SF36_9" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_9"  value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_9"  value="3" \> 3</td>
+                            </tr>
+                            <tr data-id=SF36_10 data-custom=1><td class=w3-left-align>10. Walking <b>several blocks</b></td>
+                                <td><input class="w3-radio" type="radio" name="SF36_10" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_10"  value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_10"  value="3" \> 3</td>
+                            </tr>
+                            <tr data-id=SF36_11 data-custom=1><td class=w3-left-align>11. Walking <b>one block</b></td>
+                                <td><input class="w3-radio" type="radio" name="SF36_11" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_11"  value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_11"  value="3" \> 3</td>
+                            </tr>
+                            <tr data-id=SF36_12 data-custom=1><td class=w3-left-align>12. Bathing or dressing yourself</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_12" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_12"  value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_12"  value="3" \> 3</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+              </div>
+                <div class=" w3-container " >
+                    <!--hr style="border-top:5px solid #888;"-->
+                </div>
+            <div class=" w3-border w3-border-dark-grey w3-bottombar">
+                <div  class="w3-padding">
+                        During the <b>past 4 weeks</b>, have you had any of the following problems with your work or other regular daily activities <b>as a result of your physical health</b>?
+                </div>
+                <div  class="w3-container" style='min-width:500px'>
+                    <div  class="w3-twothird w3-container w3-padding">
+                        <table class='w3-table w3-centered'>
+                            <colgroup><col></col><col style='width:70px'></col><col style='width:70px'></col></colgroup>
+                            <tr><td></td><td>Yes</td><td>No</td></tr>
+                            <tr data-id=SF36_13 data-custom=1><td class=w3-left-align>13. Cut down the <b>amount of time</b> you spent on work or other activities</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_13" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_13"  value="2" \> 2</td>
+                            </tr>
+                            <tr data-id=SF36_14 data-custom=1><td class=w3-left-align>14. <b>Accomplished less</b> than you would like</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_14" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_14"  value="2" \> 2</td>
+                            </tr>
+                            <tr data-id=SF36_15 data-custom=1><td class=w3-left-align>15. Were limited in the <b>kind</b> of work or other activities</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_15" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_15"  value="2" \> 2</td>
+                            </tr>
+                            <tr data-id=SF36_16 data-custom=1><td class=w3-left-align>16. Had <b>difficulty</b> performing the work or other activities (for example, it took extra effort)</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_16" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_16"  value="2" \> 2</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+              </div>
+                <div class="w3-container" >
+                    <!--hr style="border-top:5px solid #888;"-->
+                </div>
+                <div class=" w3-border w3-border-dark-grey w3-bottombar">
+                <div  class="w3-padding">
+                        During the <b>past 4 weeks</b>, have you had any of the following problems with your work or other regular daily activities <b>as a result of any emotional problems</b> (such as feeling depressed or anxious)?
+                </div>
+                <div  class="w3-container" style='min-width:500px'>
+                    <div  class="w3-twothird w3-container w3-padding">
+                        <table class='w3-table w3-centered'>
+                            <colgroup><col></col><col style='width:70px'></col><col style='width:70px'></col></colgroup>
+                            <tr><td></td><td>Yes</td><td>No</td></tr>
+                            <tr data-id=SF36_17 data-custom=1><td class=w3-left-align>17. Cut down the <b>amount of time</b> you spent on work or other activities</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_17" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_17"  value="2" \> 2</td>
+                            </tr>
+                            <tr data-id=SF36_18 data-custom=1><td class=w3-left-align>18. <b>Accomplished less</b> than you would like</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_18" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_18"  value="2" \> 2</td>
+                            </tr>
+                            <tr data-id=SF36_19 data-custom=1><td class=w3-left-align>19. Didn't do work or other activities as <b>carefully</b> as usual</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_19" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_19"  value="2" \> 2</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+              </div>
+                <div class=" w3-container " >
+                    <!--hr style="border-top:5px solid #888;"-->
+                </div>
+                <div class=" w3-border w3-border-dark-grey w3-bottombar">
+                <div class="w3-container w3-padding">
+                    <div>
+                        <br>20. During the <b>past 4 weeks</b>, to what extent has your physical health or emotional problems interfered with your normal social activities with family, friends, neighbors, or groups?
+                    </div>
+                    <div class="w3-container " data-id=SF36_20 data-custom=1 >
+                        <input class="w3-radio w3-padding-4" type="radio" name="SF36_20" value="1" \> 1 - Not at all
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_20 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_20" value="2" \> 2 -  Slightly
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_20 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_20" value="3" \> 3 - Moderately
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_20 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_20" value="4" \> 4 - Quite a bit
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_20 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_20" value="5" \> 5 - Extremely
+                    </div>
+                </div>
+              </div>
+                <div class=" w3-container " >
+                    <!--hr style="border-top:5px solid #888;"-->
+                </div>
+                <div class=" w3-border w3-border-dark-grey w3-bottombar">
+                <div class="w3-container w3-padding">
+                    <div>
+                        <br>21. How much <b>bodily</b> pain have you had during the <b>past 4 weeks</b>?
+                    </div>
+                    <div class="w3-container " data-id=SF36_21 data-custom=1 >
+                        <input class="w3-radio w3-padding-4" type="radio" name="SF36_21" value="1" \> 1 - None
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_21 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_21" value="2" \> 2 -  Very mild
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_21 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_21" value="3" \> 3 - Mild
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_21 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_21" value="4" \> 4 - Moderate
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_21 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_21" value="5" \> 5 - Severe
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_21 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_21" value="6" \> 6 - Very severe
+                    </div>
+                </div>
+              </div>
+                <div class=" w3-container " >
+                    <!--hr style="border-top:5px solid #888;"-->
+                </div>
+                <div class=" w3-border w3-border-dark-grey w3-bottombar">
+                <div class="w3-container w3-padding">
+                    <div>
+                        <br>22. During the <b>past 4 weeks</b>, how much did <b>pain</b> interfere with your normal work (including both work outside the home and housework)?
+                    </div>
+                    <div class="w3-container " data-id=SF36_22 data-custom=1 >
+                        <input class="w3-radio w3-padding-4" type="radio" name="SF36_22" value="1" \> 1 - Not at all
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_22 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_22" value="2" \> 2 -  A little bit
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_22 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_22" value="3" \> 3 - Moderately
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_22 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_22" value="4" \> 4 - Quite a bit
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_22 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_22" value="5" \> 5 - Extremely
+                    </div>
+                </div>
+                <div class=" w3-container " >
+                    <!--hr style="border-top:5px solid #888;"-->
+                </div>
+              </div>
+              <div class=" w3-border w3-border-dark-grey w3-bottombar">
+                <div  class="w3-padding">
+                        The following items are about activities you might do during a typical day. Does <b>your health now limit you</b> in these activities? If so, how much?
+                </div>
+                <div  class="w3-container" style='min-width:500px'>
+                    <div  class="w3-container w3-padding">
+                        <table class='w3-table w3-centered'>
+                            <colgroup><col></col><col style='width:70px'></col><col style='width:70px'></col><col style='width:70px'></col><col style='width:70px'></col><col style='width:70px'></col><col style='width:70px'></col></colgroup>
+                            <tr><td></td><td>All of the time</td><td>Most of the time</td><td>A good bit of the time</td><td>Some of the time</td><td>A little of the time</td><td>None of the time</td></tr>
+                            <tr data-id=SF36_23 data-custom=1 ><td class=w3-left-align>23. Did you feel full of pep?</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_23" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_23" value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_23" value="3" \> 3</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_23" value="4" \> 4</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_23" value="5" \> 5</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_23" value="6" \> 6</td>
+                            </tr>
+                            <tr data-id=SF36_24 data-custom=1 ><td class=w3-left-align>24. Have you been a very nervous person?</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_24" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_24" value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_24" value="3" \> 3</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_24" value="4" \> 4</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_24" value="5" \> 5</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_24" value="6" \> 6</td>
+                            </tr>
+                            <tr data-id=SF36_25 data-custom=1 ><td class=w3-left-align>25. Have you felt so down in the dumps that nothing could cheer you up?</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_25" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_25" value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_25" value="3" \> 3</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_25" value="4" \> 4</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_25" value="5" \> 5</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_25" value="6" \> 6</td>
+                            </tr>
+                            <tr data-id=SF36_26 data-custom=1 ><td class=w3-left-align>26. Have you felt calm and peaceful?</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_26" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_26" value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_26" value="3" \> 3</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_26" value="4" \> 4</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_26" value="5" \> 5</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_26" value="6" \> 6</td>
+                            </tr>
+                            <tr data-id=SF36_27 data-custom=1 ><td class=w3-left-align>27. Did you have a lot of energy?</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_27" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_27" value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_27" value="3" \> 3</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_27" value="4" \> 4</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_27" value="5" \> 5</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_27" value="6" \> 6</td>
+                            </tr>
+                            <tr data-id=SF36_28 data-custom=1 ><td class=w3-left-align>28. Have you felt downhearted and blue?</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_28" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_28" value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_28" value="3" \> 3</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_28" value="4" \> 4</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_28" value="5" \> 5</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_28" value="6" \> 6</td>
+                            </tr>
+                            <tr data-id=SF36_29 data-custom=1 ><td class=w3-left-align>29. Did you feel worn out?</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_29" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_29" value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_29" value="3" \> 3</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_29" value="4" \> 4</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_29" value="5" \> 5</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_29" value="6" \> 6</td>
+                            </tr>
+                            <tr data-id=SF36_30 data-custom=1 ><td class=w3-left-align>30. Have you been a happy person?</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_30" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_30" value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_30" value="3" \> 3</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_30" value="4" \> 4</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_30" value="5" \> 5</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_30" value="6" \> 6</td>
+                            </tr>
+                            <tr data-id=SF36_31 data-custom=1 ><td class=w3-left-align>31. Did you feel tired?</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_31" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_31" value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_31" value="3" \> 3</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_31" value="4" \> 4</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_31" value="5" \> 5</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_31" value="6" \> 6</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+              </div>
+                <div class=" w3-container " >
+                    <!--hr style="border-top:5px solid #888;"-->
+                </div>
+                <div class=" w3-border w3-border-dark-grey w3-bottombar">
+                <div class="w3-container w3-padding">
+                    <div>
+                        <br>32. During the <b>past 4 weeks</b>, how much of the time has <b>your physical health or emotional problems</b> interfered with your social activities (like visiting with friends, relatives, etc.)?
+                    </div>
+                    <div class="w3-container " data-id=SF36_32 data-custom=1 >
+                        <input class="w3-radio w3-padding-4" type="radio" name="SF36_32" value="1" \> 1 - All of the time
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_32 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_32" value="2" \> 2 -  Most of the time
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_32 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_32" value="3" \> 3 - Some of the time
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_32 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_32" value="4" \> 4 - A little of the time
+                    </div>
+                    <div class="w3-container w3-padding-4 " data-id=SF36_32 data-custom=1 >
+                        <input class="w3-radio" type="radio" name="SF36_32" value="5" \> 5 - None of the time
+                    </div>
+                </div>
+              </div>
+                <div class=" w3-container " >
+                    <!--hr style="border-top:5px solid #888;"-->
+                </div>
+                <div class=" w3-border w3-border-dark-grey w3-bottombar">
+                <div  class="w3-padding">
+                  How <b>TRUE</b> or <b>FALSE</b> is each of the following statements for you.
+                </div>
+                <div  class="w3-container" style='min-width:500px'>
+                    <div  class="w3-container w3-padding">
+                        <table class='w3-table w3-centered'>
+                            <colgroup><col></col><col style='width:70px'></col><col style='width:70px'></col><col style='width:70px'></col><col style='width:70px'></col><col style='width:70px'></col></colgroup>
+                            <tr><td></td><td>Definitely true</td><td>Mostly true</td><td>Don't know</td><td>Mostly false</td><td>Definitely false</td></tr>
+                            <tr data-id=SF36_33 data-custom=1 ><td class=w3-left-align>33. I seem to get sick a little easier than other people</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_33" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_33" value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_33" value="3" \> 3</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_33" value="4" \> 4</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_33" value="5" \> 5</td>
+                            </tr>
+                            <tr data-id=SF36_34 data-custom=1 ><td class=w3-left-align>34. I am as healthy as anybody I know</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_34" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_34" value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_34" value="3" \> 3</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_34" value="4" \> 4</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_34" value="5" \> 5</td>
+                            </tr>
+                            <tr data-id=SF36_35 data-custom=1 ><td class=w3-left-align>35. I expect my health to get worse</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_35" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_35" value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_35" value="3" \> 3</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_35" value="4" \> 4</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_35" value="5" \> 5</td>
+                            </tr>
+                            <tr data-id=SF36_36 data-custom=1 ><td class=w3-left-align>36. My health is excellent</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_36" value="1" \> 1</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_36" value="2" \> 2</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_36" value="3" \> 3</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_36" value="4" \> 4</td>
+                                <td><input class="w3-radio" type="radio" name="SF36_36" value="5" \> 5</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="w3-container" >
+                    <!--hr style="border-top:5px solid #888;"-->
+                </div>
+            <br>
+        </div>
+
+                <div id=toolbar__ID>
+                    <a id=save2__ID class=save_and_back__ID >Save & Back</a> <span class=tab__ID></span>
+                </div>
+            </div>
+        </div>
+      </div>
+    </form>
+</section>
+<script>
+function F__ID(){
+    //----------------------------------
+    VmInclude:__COMPONENT__/grid/form.v3.js
+    VmInclude:__CURRENT_PATH__/task.form.js
+    _json='';
+
+    //----------------------------------
+    $('#D__ID').on('load',function(){
+        _init();
+        _field_process();
+        _task_fields=$vm.vm['__ID'].op.grid_to_form_parameters.task_fields;
+        _set_participant_field();
+        custom_field_process();
+    })
+    //----------------------------------
+    var custom_field_process=function(){
+        $('#F__ID div[data-custom=1],tr[data-custom=1]').each(function(){
+            var field=$(this).attr('data-id');
+            switch(field){
+                case "Participant":
+                    $(this).find("input[name='"+field+"']").val(_records[I].Participant);
+                    $(this).find("input[name='"+field+"_uid']").val(_records[I].Participant_uid);
+                break;
+                case "SF36_1":
+                case "SF36_2":
+                case "SF36_3":
+                case "SF36_4":
+                case "SF36_5":
+                case "SF36_6":
+                case "SF36_7":
+                case "SF36_8":
+                case "SF36_9":
+                case "SF36_10":
+                case "SF36_11":
+                case "SF36_12":
+                case "SF36_13":
+                case "SF36_14":
+                case "SF36_15":
+                case "SF36_16":
+                case "SF36_17":
+                case "SF36_18":
+                case "SF36_19":
+                case "SF36_20":
+                case "SF36_21":
+                case "SF36_22":
+                case "SF36_23":
+                case "SF36_24":
+                case "SF36_25":
+                case "SF36_26":
+                case "SF36_27":
+                case "SF36_28":
+                case "SF36_29":
+                case "SF36_30":
+                case "SF36_31":
+                case "SF36_32":
+                case "SF36_33":
+                case "SF36_34":
+                case "SF36_35":
+                case "SF36_36":
+                    $('#F__ID').find("input[name='"+field+"'][value='"+_records[I][field]+"']").prop('checked', true);
+                    $('#F__ID').find("input[name='"+field+"']").on('click',function(){
+                        _set_value(this.value,_records,I,field);
+                    })
+                break;
+            }
+        })
+    }
+    //----------------------------------
+    //----------------------------------
+    _before_submit_form=function(){
+        if( $('#F__ID').find('input[name=SF36_1]:checked').val()===undefined){ $vm.alert('Please answer question 1'); return false; }
+        if( $('#F__ID').find('input[name=SF36_2]:checked').val()===undefined){ $vm.alert('Please answer question 2'); return false; }
+        if( $('#F__ID').find('input[name=SF36_3]:checked').val()===undefined){ $vm.alert('Please answer question 3'); return false; }
+        if( $('#F__ID').find('input[name=SF36_4]:checked').val()===undefined){ $vm.alert('Please answer question 4'); return false; }
+        if( $('#F__ID').find('input[name=SF36_5]:checked').val()===undefined){ $vm.alert('Please answer question 5'); return false; }
+        if( $('#F__ID').find('input[name=SF36_6]:checked').val()===undefined){ $vm.alert('Please answer question 6'); return false; }
+        if( $('#F__ID').find('input[name=SF36_7]:checked').val()===undefined){ $vm.alert('Please answer question 7'); return false; }
+        if( $('#F__ID').find('input[name=SF36_8]:checked').val()===undefined){ $vm.alert('Please answer question 8'); return false; }
+        if( $('#F__ID').find('input[name=SF36_9]:checked').val()===undefined){ $vm.alert('Please answer question 9'); return false; }
+        if( $('#F__ID').find('input[name=SF36_10]:checked').val()===undefined){ $vm.alert('Please answer question 10'); return false; }
+        if( $('#F__ID').find('input[name=SF36_11]:checked').val()===undefined){ $vm.alert('Please answer question 11'); return false; }
+        if( $('#F__ID').find('input[name=SF36_12]:checked').val()===undefined){ $vm.alert('Please answer question 12'); return false; }
+        if( $('#F__ID').find('input[name=SF36_13]:checked').val()===undefined){ $vm.alert('Please answer question 13'); return false; }
+        if( $('#F__ID').find('input[name=SF36_14]:checked').val()===undefined){ $vm.alert('Please answer question 14'); return false; }
+        if( $('#F__ID').find('input[name=SF36_15]:checked').val()===undefined){ $vm.alert('Please answer question 15'); return false; }
+        if( $('#F__ID').find('input[name=SF36_16]:checked').val()===undefined){ $vm.alert('Please answer question 16'); return false; }
+        if( $('#F__ID').find('input[name=SF36_17]:checked').val()===undefined){ $vm.alert('Please answer question 17'); return false; }
+        if( $('#F__ID').find('input[name=SF36_18]:checked').val()===undefined){ $vm.alert('Please answer question 18'); return false; }
+        if( $('#F__ID').find('input[name=SF36_19]:checked').val()===undefined){ $vm.alert('Please answer question 19'); return false; }
+        if( $('#F__ID').find('input[name=SF36_20]:checked').val()===undefined){ $vm.alert('Please answer question 20'); return false; }
+        if( $('#F__ID').find('input[name=SF36_21]:checked').val()===undefined){ $vm.alert('Please answer question 21'); return false; }
+        if( $('#F__ID').find('input[name=SF36_22]:checked').val()===undefined){ $vm.alert('Please answer question 22'); return false; }
+        if( $('#F__ID').find('input[name=SF36_23]:checked').val()===undefined){ $vm.alert('Please answer question 23'); return false; }
+        if( $('#F__ID').find('input[name=SF36_24]:checked').val()===undefined){ $vm.alert('Please answer question 24'); return false; }
+        if( $('#F__ID').find('input[name=SF36_25]:checked').val()===undefined){ $vm.alert('Please answer question 25'); return false; }
+        if( $('#F__ID').find('input[name=SF36_26]:checked').val()===undefined){ $vm.alert('Please answer question 26'); return false; }
+        if( $('#F__ID').find('input[name=SF36_27]:checked').val()===undefined){ $vm.alert('Please answer question 27'); return false; }
+        if( $('#F__ID').find('input[name=SF36_28]:checked').val()===undefined){ $vm.alert('Please answer question 28'); return false; }
+        if( $('#F__ID').find('input[name=SF36_29]:checked').val()===undefined){ $vm.alert('Please answer question 29'); return false; }
+        if( $('#F__ID').find('input[name=SF36_30]:checked').val()===undefined){ $vm.alert('Please answer question 30'); return false; }
+        if( $('#F__ID').find('input[name=SF36_31]:checked').val()===undefined){ $vm.alert('Please answer question 31'); return false; }
+        if( $('#F__ID').find('input[name=SF36_32]:checked').val()===undefined){ $vm.alert('Please answer question 32'); return false; }
+        if( $('#F__ID').find('input[name=SF36_33]:checked').val()===undefined){ $vm.alert('Please answer question 33'); return false; }
+        if( $('#F__ID').find('input[name=SF36_34]:checked').val()===undefined){ $vm.alert('Please answer question 34'); return false; }
+        if( $('#F__ID').find('input[name=SF36_35]:checked').val()===undefined){ $vm.alert('Please answer question 35'); return false; }
+        if( $('#F__ID').find('input[name=SF36_36]:checked').val()===undefined){ $vm.alert('Please answer question 36'); return false; }
+    }
+
+}
+</script>
+<style>
+VmInclude:__BASE__/vmiis/module-library/clinical_trials_questionnaire/css/w3.css
+VmInclude:__COMPONENT__/toolbar/toolbar.css
+VmInclude:__COMPONENT__/grid/form.css
+</style>

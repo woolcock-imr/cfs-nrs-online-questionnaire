@@ -1,0 +1,92 @@
+<form id=F__ID__>
+<table class=page_table style='width:750px'>
+<colgroup><col class='c616111_column1' /><col class='c616111_column2' /></colgroup>
+<tr><td colspan=2 class='header header'>
+Short Form-36 (SF-36)
+
+<b><br><br>
+<p style='text-align:center;color:#fff; font-size:11px;font-family: Verdana;'>
+This questionnaire asks for your views about your health, how you feel and how well you are able to do your usual activities.  Answer every question by marking the answer as indicated.  If you are unsure about how to answer a question, please give the best answer you can. 
+</p>
+<br></b>
+</td></tr>
+
+<tr><td>1. In general, would you say your health is:</td><td><input type=radio class=c614111_rb_3 value=1 name=SF36_1 >Excellent<br><input type=radio class=c614111_rb_3 value=2 id=SF36_1 name=SF36_1 >Very good<br><input type=radio class=c614111_rb_3 value=3 name=SF36_1 >Good<br><input type=radio class=c614111_rb_3 value=4 name=SF36_1 >Fair<br><input type=radio class=c614111_rb_3 value=5 name=SF36_1 >Poor</td></tr>
+<tr><td>2. <u>Compared to one year ago</u>, how would you rate your health in general <u>now</u>?</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_2 name=SF36_2 >Much better now than one year ago<br><input type=radio class=c614111_rb_3 value=2 name=SF36_2 >Somewhat better now than one year ago<br><input type=radio class=c614111_rb_3 value=3 name=SF36_2 >About the same as one year ago<br><input type=radio class=c614111_rb_3 value=4 name=SF36_2 >Somewhat worse now than one year ago<br><input type=radio class=c614111_rb_3 value=5 name=SF36_2 >Much worse now than one year ago</td></tr>
+</table>
+<table class=page_table_2 style='width:750px'>
+<colgroup><col class='c616111_column3_1' /><col class='c616111_column3_2' /><col class='c616111_column3_2' /><col class='c616111_column3_2' /></colgroup>
+<tr><td colspan=4 class=' '><b>3. The following questions are about activities you might do during a typical day. Does your health now limit you in these activies, if yes, how much?</b></td></tr>
+<tr><td><b>ACTIVITIES</b></td><td><b>Yes,<br>Limitied A Lot</b></td><td><b>Yes,<br>Limitied A Little</b></td><td><b>No,<br>Not Limited At All</b></td></tr>
+<tr><td>a. Vigourous activities, such as running lifting heavy objects, participating in sports</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_3_a name=SF36_3_a ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_3_a ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_3_a ></td></tr>
+<tr><td>b. Moderate activities, such as moving a table, pushing a vacuum cleaner, bowling or playing golf</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_3_b name=SF36_3_b ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_3_b ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_3_b ></td></tr>
+<tr><td>c. Lifting or carrying groceries</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_3_c name=SF36_3_c ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_3_c ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_3_c ></td></tr>
+<tr><td>d. Climbing several flights of stairs</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_3_d name=SF36_3_d ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_3_d ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_3_d ></td></tr>
+<tr><td>e. Climbing one flight of stairs</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_3_e name=SF36_3_e ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_3_e ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_3_e ></td></tr>
+<tr><td>f. Bending, kneeling or stooping</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_3_f1 name=SF36_3_f1 ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_3_f1 ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_3_f1 ></td></tr>
+<tr><td>g. Walking more than one kilometre</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_3_g name=SF36_3_g ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_3_g ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_3_g ></td></tr>
+<tr><td>h. Walking half a kilometre</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_3_h name=SF36_3_h ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_3_h ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_3_h ></td></tr>
+<tr><td>i. Walking 100m</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_3_i name=SF36_3_i ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_3_i ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_3_i ></td></tr>
+<tr><td>j. Bathing or dressing yourself </td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_3_j name=SF36_3_j ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_3_j ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_3_j ></td></tr>
+</table>
+<table class=page_table_2 style='width:750px'>
+<colgroup><col class='c616111_column4_1' /><col class='c616111_column4_2' /><col class='c616111_column4_2' /></colgroup>
+<tr><td colspan=3 class=' '><b>4. During the <u>past 4 weeks,</u> have you had any of the following problems with your work or other regular daily activities <u>as a result of your physical health?</u></b></td></tr>
+<tr><td></td><td><b>Yes</b></td><td><b>No</b></td></tr>
+<tr><td>a. Cut down on the amount of time you spent on work or other activites</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_4_a name=SF36_4_a ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_4_a ></td></tr>
+<tr><td>b. Accomplished less than you would like</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_4_b name=SF36_4_b ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_4_b ></td></tr>
+<tr><td>c. Were limited in the kind of work or other activities</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_4_c name=SF36_4_c ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_4_c ></td></tr>
+<tr><td>d. Had difficulty performing the work or other activities (for example, it took extra effort)</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_4_d name=SF36_4_d ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_4_d ></td></tr>
+
+<tr><td colspan=3 class=' '><br><b>5. During the past 4 weeks have you had any of the following problems with your work or other regular daily activities as a result of any emotional problems (such as feeling depressed or anxious)?</b></td></tr>
+<tr><td></td><td><b>Yes</b></td><td><b>No</b></td></tr>
+<tr><td>a. Cut down on the amount of time you spent on work or other activities?</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_5_a name=SF36_5_a ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_5_a ></td></tr>
+<tr><td>b. Accomplished less than you would like?</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_5_b name=SF36_5_b ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_5_b ></td></tr>
+<tr><td>c. Didn't do work or other activities as carefully as usual?</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_5_c name=SF36_5_c ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_5_c ></td></tr>
+</table>
+<table class=page_table style='width:750px'>
+<colgroup><col class='c616111_column6_1' /><col class='c616111_column6_2' /></colgroup>
+<tr><td>6. During the past 4 weeks, to what extent has your physical health or emotional problems interfered with your normal social actitites with family, friends, neighbours, or groups?</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_6 name=SF36_6 >Not at all<br><input type=radio class=c614111_rb_3 value=2 name=SF36_6 >Slightly<br><input type=radio class=c614111_rb_3 value=3 name=SF36_6 >Moderately<br><input type=radio class=c614111_rb_3 value=4 name=SF36_6 >Quite a bit<br><input type=radio class=c614111_rb_3 value=5 name=SF36_6 >Extremely</td></tr>
+<tr><td>7. How much <u>bodily</u> pain have you had during the past 4 weeks?</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_7 name=SF36_7 >None<br><input type=radio class=c614111_rb_3 value=2 name=SF36_7 >Very mild<br><input type=radio class=c614111_rb_3 value=3 name=SF36_7 >Mild<br><input type=radio class=c614111_rb_3 value=4 name=SF36_7 >Moderate<br><input type=radio class=c614111_rb_3 value=5 name=SF36_7 >Severe<br><input type=radio class=c614111_rb_3 value=6 name=SF36_7 >Very severe</td></tr>
+<tr><td>8. During the past 4 weeks, how much did pain interfere with your normal work (including both work outside the home and housework)?</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_8 name=SF36_8 >Not at all<br><input type=radio class=c614111_rb_3 value=2 name=SF36_8 >A little bit<br><input type=radio class=c614111_rb_3 value=3 name=SF36_8 >Moderately<br><input type=radio class=c614111_rb_3 value=4 name=SF36_8 >Quite a bit<br><input type=radio class=c614111_rb_3 value=5 name=SF36_8 >Extremely</td></tr>
+</table>
+<table class=page_table_2 style='width:750px'>
+<colgroup><col class='c616111_column9_1' /><col class='c616111_column9_2' /><col class='c616111_column9_2' /><col class='c616111_column9_2' /><col class='c616111_column9_2' /><col class='c616111_column9_2' /><col class='c616111_column9_2' /></colgroup>
+<tr><td colspan=7 class=' '><b>9. These questions are about how you feel and how things have been with you during the <u>past 4 weeks</u>.  For each question, plese give the one answer that comes closest to the way you have been feeling.  How much of the time during the <u>past 4 weeks</u> - </b></td></tr>
+<tr><td></td><td><b>All of the Time</b></td><td><b>Most of the Time</b></td><td><b>A Good Bit of the Time</b></td><td><b>Some of the Time</b></td><td><b>A Little of the Time</b></td><td><b>None of the Time</b></td></tr>
+<tr><td>a. Did you feel full of life?</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_9_a name=SF36_9_a ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_9_a ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_9_a ></td><td><input type=radio class=c614111_rb_3 value=4 name=SF36_9_a ></td><td><input type=radio class=c614111_rb_3 value=5 name=SF36_9_a ></td><td><input type=radio class=c614111_rb_3 value=6 name=SF36_9_a ></td></tr>
+<tr><td>b. Have you been a very nervous person?</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_9_b name=SF36_9_b ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_9_b ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_9_b ></td><td><input type=radio class=c614111_rb_3 value=4 name=SF36_9_b ></td><td><input type=radio class=c614111_rb_3 value=5 name=SF36_9_b ></td><td><input type=radio class=c614111_rb_3 value=6 name=SF36_9_b ></td></tr>
+<tr><td>c. Have you felt so down in the dumps that nothing could cheer you up?</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_9_c name=SF36_9_c ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_9_c ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_9_c ></td><td><input type=radio class=c614111_rb_3 value=4 name=SF36_9_c ></td><td><input type=radio class=c614111_rb_3 value=5 name=SF36_9_c ></td><td><input type=radio class=c614111_rb_3 value=6 name=SF36_9_c ></td></tr>
+<tr><td>d. Have you felt calm and peaceful?</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_9_d name=SF36_9_d ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_9_d ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_9_d ></td><td><input type=radio class=c614111_rb_3 value=4 name=SF36_9_d ></td><td><input type=radio class=c614111_rb_3 value=5 name=SF36_9_d ></td><td><input type=radio class=c614111_rb_3 value=6 name=SF36_9_d ></td></tr>
+<tr><td>e. Did you have a lot of energy?</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_9_e name=SF36_9_e ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_9_e ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_9_e ></td><td><input type=radio class=c614111_rb_3 value=4 name=SF36_9_e ></td><td><input type=radio class=c614111_rb_3 value=5 name=SF36_9_e ></td><td><input type=radio class=c614111_rb_3 value=6 name=SF36_9_e ></td></tr>
+<tr><td>f. Have you felt down?</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_9_f1 name=SF36_9_f1 ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_9_f1 ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_9_f1 ></td><td><input type=radio class=c614111_rb_3 value=4 name=SF36_9_f1 ></td><td><input type=radio class=c614111_rb_3 value=5 name=SF36_9_f1 ></td><td><input type=radio class=c614111_rb_3 value=6 name=SF36_9_f1 ></td></tr>
+<tr><td>g. Did you feel worn out?</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_9_g name=SF36_9_g ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_9_g ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_9_g ></td><td><input type=radio class=c614111_rb_3 value=4 name=SF36_9_g ></td><td><input type=radio class=c614111_rb_3 value=5 name=SF36_9_g ></td><td><input type=radio class=c614111_rb_3 value=6 name=SF36_9_g ></td></tr>
+<tr><td>h. Have you been a happy person?</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_9_h name=SF36_9_h ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_9_h ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_9_h ></td><td><input type=radio class=c614111_rb_3 value=4 name=SF36_9_h ></td><td><input type=radio class=c614111_rb_3 value=5 name=SF36_9_h ></td><td><input type=radio class=c614111_rb_3 value=6 name=SF36_9_h ></td></tr>
+<tr><td>i. Did you feel tired?</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_9_i name=SF36_9_i ></td><td><input type=radio class=c614111_rb_3 value=2 name=SF36_9_i ></td><td><input type=radio class=c614111_rb_3 value=3 name=SF36_9_i ></td><td><input type=radio class=c614111_rb_3 value=4 name=SF36_9_i ></td><td><input type=radio class=c614111_rb_3 value=5 name=SF36_9_i ></td><td><input type=radio class=c614111_rb_3 value=6 name=SF36_9_i ></td></tr>
+
+</table>
+<table class=page_table style='width:750px'>
+    <colgroup><col class='c616111_column11_1' /><col/></colgroup>
+<tr><td>10. During the <u>past 4 weeks</u>, how much of the time has your <u>physical health or emotional problems</u> interfered with your social activities (like visiting with friends, relatives, etc)?</td><td><input type=radio class=c614111_rb_3 value=1 id=SF36_10 name=SF36_10 >All of the time<br><input type=radio class=c614111_rb_3 value=2 name=SF36_10 >Most of the time<br><input type=radio class=c614111_rb_3 value=3 name=SF36_10 >Some of the time<br><input type=radio class=c614111_rb_3 value=4 name=SF36_10 >A little of the time<br><input type=radio class=c614111_rb_3 value=5 name=SF36_10 >None of the time</td></tr>
+</table>
+<table class=page_table_2 style='width:750px'>
+<colgroup><col class='c616111_column11_1' /><col class='c616111_column11_2' /><col class='c616111_column11_2' /><col class='c616111_column11_2' /><col class='c616111_column11_2' /><col class='c616111_column11_2' /></colgroup>
+<tr><td colspan=6 class=' '><b>11. How TRUE or FALSE is each of the following statements for you?</b></td></tr>
+<tr><td></td><td><b>Definitely true</b></td><td><b>Mostly true</b></td><td><b>Don't know</b></td><td><b>Mostly false</b></td><td><b>Definitely false</b></td></tr>
+<tr><td>a. I seem to get sick a little easier than other people</td><td><input type=radio value=1 id=SF36_11_a name=SF36_11_a ></td><td><input type=radio value=2 name=SF36_11_a ></td><td><input type=radio value=3 name=SF36_11_a ></td><td><input type=radio value=4 name=SF36_11_a ></td><td><input type=radio value=5 name=SF36_11_a ></td></tr>
+<tr><td>b. I am as healthy as anybody I know</td><td><input type=radio value=1 name=SF36_11_b ></td><td><input type=radio value=2 id=SF36_11_b name=SF36_11_b ></td><td><input type=radio value=3 name=SF36_11_b ></td><td><input type=radio value=4 name=SF36_11_b ></td><td><input type=radio value=5 name=SF36_11_b ></td></tr>
+<tr><td>c. I expect my health to get worse</td><td><input type=radio value=1 name=SF36_11_c ></td><td><input type=radio value=2 id=SF36_11_c name=SF36_11_c ></td><td><input type=radio value=3 name=SF36_11_c ></td><td><input type=radio value=4 name=SF36_11_c ></td><td><input type=radio value=5 name=SF36_11_c ></td></tr>
+<tr><td>d. My health is excellent</td><td><input type=radio value=1 name=SF36_11_d ></td><td><input type=radio value=2 id=SF36_11_d name=SF36_11_d ></td><td><input type=radio value=3 name=SF36_11_d ></td><td><input type=radio value=4 name=SF36_11_d ></td><td><input type=radio value=5 name=SF36_11_d ></td></tr>
+
+<tr class=tr_hide><td>Physical Function</td><td><input name=SF36_PF id=SF36_PF type=text></td></tr>
+<tr class=tr_hide><td>Role Physical </td><td><input name=SF36_RP id=SF36_RP type=text></td></tr>
+<tr class=tr_hide><td>Body Pain</td><td><input name=SF36_BP id=SF36_BP type=text></td></tr>
+<tr class=tr_hide><td>General Health </td><td><input name=SF36_GH id=SF36_GH type=text></td></tr>
+<tr class=tr_hide><td>Vitality </td><td><input name=SF36_V id=SF36_V type=text></td></tr>
+<tr class=tr_hide><td>Social Functioning</td><td><input name=SF36_SF id=SF36_SF type=text></td></tr>
+<tr class=tr_hide><td>Role Emotional </td><td><input name=SF36_RE id=SF36_RE type=text></td></tr>
+<tr class=tr_hide><td>Mental Health</td><td><input name=SF36_MH id=SF36_MH type=text></td></tr>
+<tr class=tr_hide><td>Physical Health</td><td><input name=SF36_PH id=SF36_PH type=text></td></tr>
+<tr class=tr_hide><td>Mean Mental Health </td><td><input name=SF36_MMH id=SF36_MMH type=text></td></tr>
+</table>
+</form>

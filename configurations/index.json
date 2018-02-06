@@ -1,0 +1,10 @@
+{
+	"_api_path_development":"https://rt.woolcock.org.au/dev/",
+	"api_path_development":"https://cbs.wappsystem.com/dev/",
+	"api_path_production":"https://rt.woolcock.org.au/pro/",
+	"default_production":"Yes",
+	"panels":{
+		"website":	        		{"url":"","modules":["modules/website/module.json"]},
+		"cpaphdeeg-quest-panel":	{"url":"modules/panel/quest.html","modules":["modules/edc/module.json"]}
+	}
+}

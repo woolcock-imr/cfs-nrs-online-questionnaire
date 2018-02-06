@@ -1,0 +1,31 @@
+<section>
+    VmInclude:__COMPONENT__/grid/grid.v3.html
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+        VmInclude:__COMPONENT__/grid/grid.v3.js
+        _json='';
+        VmInclude:__CURRENT_PATH__/task.js
+        //-------------------------------------
+        _task_fields="Post Exertional Fatigue rank|rank_1,Long recovery period rank|rank_2,Fatigue rank|rank_3,Sleep Disturbances rank|rank_4,Pain|rank_5,Memory Disturbances rank|rank_6,Confusion and Difficulty Concentrating rank|rank_7,Difficulty Retrieving words rank|rank_8,Gastrointestinal Disturbances rank|rank_9,Recurrent Sore Throat rank|rank_10,Recurrent Flu like symptoms rank|rank_11,Dizziness upon standing up rank|rank_12,Change in body temp rank|rank_13,Heat and cold intolerance rank|rank_14,Hot flushes or sweat rank|rank_15,Marked Weight Changes rank|rank_16,Breathlessness rank|rank_17,Tender Lymph Nodes rank|rank_18,Light Sensitivity rank|rank_19,Muscle Weakness rank|rank_20,New Sensitivities rank|rank_21,ccss_1,ccss_2,ccss_3,ccss_4,ccss_5,ccss_6,ccss_7,ccss_8,ccss_9,css_10,ccss_11,ccss_12,ccss_13,ccss_14,ccss_15,ccss_16,css_17,ccss_18,ccss_19,ccss_20,ccss_21,ccss_Mild,ccss_Moderate,ccss_Severe,ccss_total";
+        _fields="_Form|form_module,Status|S2,Notes|NT,Participant,"+_task_fields;
+        _fields+=",Submit Date|DateTime,Submitted by|Author,_Delete,_Hidden|Participant_uid";
+        _grid_to_form_parameters={task_fields:_task_fields};
+        //-------------------------------------
+        $('#D__ID').on('load',function(){  _set_req(); _request_data(); })
+        $('#D__ID').on('back',function(){  _set_req(); _request_data(); })
+        //-------------------------------------
+        _cell_render=function(records,I,field,td,set_value,source){
+            _default_cell_render(records,I,field,td,set_value,source);
+        }
+        //-------------------------------------
+        _before_submit=function(record,dbv){
+            return _set_status_and_participant(record,dbv);
+        }
+        //-------------------------------------
+    }
+</script>
+<style>
+    VmInclude:__COMPONENT__/grid/grid.v3.css
+</style>

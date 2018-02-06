@@ -1,0 +1,131 @@
+<section>
+    VmInclude:__COMPONENT__/grid/grid.v3.html
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+        VmInclude:__COMPONENT__/grid/grid.v3.js
+        _json='';
+        VmInclude:__CURRENT_PATH__/task.js
+
+        //-------------------------------------
+        _task_fields="SF36_1,SF36_2,SF36_3,SF36_4,SF36_5,SF36_6,SF36_7,SF36_8,SF36_9,SF36_10,SF36_11,SF36_12,SF36_13,SF36_14,SF36_15,SF36_16,SF36_17,SF36_18,SF36_19,SF36_20,SF36_21,SF36_22,SF36_23,SF36_24,SF36_25,SF36_26,SF36_27,SF36_28,SF36_29,SF36_30,SF36_31,SF36_32,SF36_33,SF36_34,SF36_35,SF36_36,Vitality|SF36_VI,Physical functioning|SF36_PF,Bodily pain|SF36_BP,General health perceptions|SF36_GHP,Physical role functioning|SF36_PRF,Emotional role functionin|SF36_ERF,Social role functioning|SF36_SRF,Mental health|SF36_MH, Physical health|SF36_PH,Mean mental health|SF36_MHM";
+        _fields="_Form|form_module,Status|S3,Notes|NT,Participant,"+_task_fields;
+        _fields+=",Submit Date|DateTime,Submitted by|Author,_Delete,_Hidden|Participant_uid";
+        //-------------------------------------
+        $('#D__ID').on('load',function(){  _set_req(); _request_data(); })
+        $('#D__ID').on('back',function(){  _set_req(); _request_data(); })
+        //-------------------------------------
+        _cell_render=function(records,I,field,td,set_value,source){
+            switch(field){
+                case 'SF36_PF':
+                case 'SF36_PRF':
+                case 'SF36_BP':
+                case 'SF36_GHP':
+                case 'SF36_VI':
+                case 'SF36_SRF':
+                case 'SF36_ERF':
+                case 'SF36_MH':
+                case 'SF36_PH':
+                case 'SF36_MHM':
+                    records[I].vm_readonly[field]=true;
+                break;
+            }
+            _default_cell_render(records,I,field,td,set_value,source);
+        }
+        //-------------------------------------
+        _before_submit=function(record,dbv){
+            record.SF36_PF=((((parseFloat(record.SF36_3)+parseFloat(record.SF36_4)+parseFloat(record.SF36_5)+parseFloat(record.SF36_6)+parseFloat(record.SF36_7)+parseFloat(record.SF36_8)+parseFloat(record.SF36_9)+parseFloat(record.SF36_10)+parseFloat(record.SF36_11)+parseFloat(record.SF36_12))-10)/20)*100).toFixed(0);
+            record.SF36_PRF=((((parseFloat(record.SF36_13)+parseFloat(record.SF36_14)+parseFloat(record.SF36_15)+parseFloat(record.SF36_16))-4)/4)*100).toFixed(0);
+            var bp=0;
+            if(parseFloat(record.SF36_21)==1) bp=6.0;
+            if(parseFloat(record.SF36_21)==2) bp=5.4;
+            if(parseFloat(record.SF36_21)==3) bp=4.2;
+            if(parseFloat(record.SF36_21)==4) bp=3.1;
+            if(parseFloat(record.SF36_21)==5) bp=2.2;
+            if(parseFloat(record.SF36_21)==6) bp=1.0;
+            if(parseFloat(record.SF36_22)==1 & parseFloat(record.SF36_21) == 1) bp+=6.0;
+            if(parseFloat(record.SF36_22)==1 & parseFloat(record.SF36_21)!= 1) bp+=5.0;
+            if(parseFloat(record.SF36_22)==2) bp+=4;
+            if(parseFloat(record.SF36_22)==3) bp+=3;
+            if(parseFloat(record.SF36_22)==4) bp+=2;
+            if(parseFloat(record.SF36_22)==5) bp+=1;
+            bp=((bp-2)/10)*100;
+            record.SF36_BP=bp.toFixed(0);
+            var gh=0;
+            if(parseFloat(record.SF36_1)==1) gh=5.0;
+            if(parseFloat(record.SF36_1)==2) gh=4.4;
+            if(parseFloat(record.SF36_1)==3) gh=3.4;
+            if(parseFloat(record.SF36_1)==4) gh=2.0;
+            if(parseFloat(record.SF36_1)==5) gh=1.0;
+            gh+=parseFloat(record.SF36_33)+parseFloat(record.SF36_35);
+            if(parseFloat(record.SF36_34)==1) gh+=5.0;
+            if(parseFloat(record.SF36_34)==2) gh+=4.0;
+            if(parseFloat(record.SF36_34)==3) gh+=3.0;
+            if(parseFloat(record.SF36_34)==4) gh+=2.0;
+            if(parseFloat(record.SF36_34)==5) gh+=1.0;
+            if(parseFloat(record.SF36_36)==1) gh+=5.0;
+            if(parseFloat(record.SF36_36)==2) gh+=4.0;
+            if(parseFloat(record.SF36_36)==3) gh+=3.0;
+            if(parseFloat(record.SF36_36)==4) gh+=2.0;
+            if(parseFloat(record.SF36_36)==5) gh+=1.0;
+            gh=((gh-5)/20)*100;
+            record.SF36_GHP=gh.toFixed(0);
+            var VI=0;
+            if(parseFloat(record.SF36_23)==1) VI=6.0;
+            if(parseFloat(record.SF36_23)==2) VI=5.0;
+            if(parseFloat(record.SF36_23)==3) VI=4.0;
+            if(parseFloat(record.SF36_23)==4) VI=3.0;
+            if(parseFloat(record.SF36_23)==5) VI=2.0;
+            if(parseFloat(record.SF36_23)==6) VI=1.0;
+            if(parseFloat(record.SF36_27)==1) VI+=6.0;
+            if(parseFloat(record.SF36_27)==2) VI+=5.0;
+            if(parseFloat(record.SF36_27)==3) VI+=4.0;
+            if(parseFloat(record.SF36_27)==4) VI+=3.0;
+            if(parseFloat(record.SF36_27)==5) VI+=2.0;
+            if(parseFloat(record.SF36_27)==6) VI+=1.0;
+            VI+=parseFloat(record.SF36_29)+parseFloat(record.SF36_31);
+            VI=((VI-4)/20)*100;
+            record.SF36_VI=VI.toFixed(0);
+            var SF=0;
+            if(parseFloat(record.SF36_20)==1) SF=5.0;
+            if(parseFloat(record.SF36_20)==2) SF=4.0;
+            if(parseFloat(record.SF36_20)==3) SF=3.0;
+            if(parseFloat(record.SF36_20)==4) SF=2.0;
+            if(parseFloat(record.SF36_20)==5) SF=1.0;
+            SF = SF + parseFloat(record.SF36_32);
+            SF=((SF-2)/8)*100;
+            record.SF36_SRF=SF.toFixed(0);
+            record.SF36_ERF=((((parseFloat(record.SF36_17)+ parseFloat(record.SF36_18)+parseFloat(record.SF36_19))-3)/3)*100).toFixed(0);
+            var MH=0;
+            if(parseFloat(record.SF36_26)==1) MH=6.0;
+            if(parseFloat(record.SF36_26)==2) MH=5.0;
+            if(parseFloat(record.SF36_26)==3) MH=4.0;
+            if(parseFloat(record.SF36_26)==4) MH=3.0;
+            if(parseFloat(record.SF36_26)==5) MH=2.0;
+            if(parseFloat(record.SF36_26)==6) MH=1.0;
+            if(parseFloat(record.SF36_30)==1) MH+=6.0;
+            if(parseFloat(record.SF36_30)==2) MH+=5.0;
+            if(parseFloat(record.SF36_30)==3) MH+=4.0;
+            if(parseFloat(record.SF36_30)==4) MH+=3.0;
+            if(parseFloat(record.SF36_30)==5) MH+=2.0;
+            if(parseFloat(record.SF36_30)==6) MH+=1.0;
+            MH+=parseFloat(record.SF36_24)+parseFloat(record.SF36_25)+parseFloat(record.SF36_28);
+            MH=((MH-5)/25)*100;
+            record.SF36_MH=MH.toFixed(0);
+            record.SF36_PH=((parseFloat(record.SF36_PF)+ parseFloat(record.SF36_PRF)+parseFloat(record.SF36_BP)+parseFloat(record.SF36_GHP)+parseFloat(record.SF36_VI))/5).toFixed(0);
+            record.SF36_MHM=((parseFloat(record.SF36_SRF)+parseFloat(record.SF36_ERF)+parseFloat(record.SF36_MH))/3).toFixed(0);
+            return _set_status_and_participant(record,dbv);
+        }
+    }
+</script>
+<style>
+    VmInclude:__COMPONENT__/grid/grid.v3.css
+    ul.ui-autocomplete.ui-menu{font-size:12px}
+    .ui-autocomplete li:hover{
+        color:White;
+        background:#96B202;
+        font-weight:normal;
+        outline:none;
+    }
+</style>

@@ -1,0 +1,72 @@
+<section>
+    <div id=toolbar__ID>
+          <a id=back__ID>Back</a> <a id=start__ID>Start</a> <a id=stop__ID>Stop</a>
+    </div>
+    <img id=img__ID />
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+        VmInclude:__COMPONENT__/toolbar/back.js
+        //-------------------------------------
+        var img_array=[
+        {src:'__BASE__/woolcock-imr/CFS_NRS/images/LDT/Set2/Test/Test_77.jpg',time:8000},
+        {src:'__BASE__/woolcock-imr/CFS_NRS/images/LDT/Set2/Test/Test_78.jpg',time:8000},
+        {src:'__BASE__/woolcock-imr/CFS_NRS/images/LDT/Set2/Test/Test_79.jpg',time:8000},
+        {src:'__BASE__/woolcock-imr/CFS_NRS/images/LDT/Set2/Test/Test_80.jpg',time:8000},
+        {src:'__BASE__/woolcock-imr/CFS_NRS/images/LDT/Set2/Test/Test_81.jpg',time:8000},
+        {src:'__BASE__/woolcock-imr/CFS_NRS/images/LDT/Set2/Test/Test_82.jpg',time:8000},
+        {src:'__BASE__/woolcock-imr/CFS_NRS/images/LDT/Set2/Test/Test_83.jpg',time:8000},
+        {src:'__BASE__/woolcock-imr/CFS_NRS/images/LDT/Set2/Test/Test_84.jpg',time:8000},
+        {src:'__BASE__/woolcock-imr/CFS_NRS/images/LDT/Set2/Test/Test_85.jpg',time:8000},
+        {src:'__BASE__/woolcock-imr/CFS_NRS/images/LDT/Set2/Test/Test_86.jpg',time:8000},
+        {src:'__BASE__/woolcock-imr/CFS_NRS/images/LDT/Set2/Test/Test_87.jpg',time:8000},
+        {src:'__BASE__/woolcock-imr/CFS_NRS/images/LDT/Set2/Test/Test_88.jpg',time:8000},
+        ]
+        //----------------------------------
+        var random_array=function(array){
+            var currentIndex=array.length, temporaryValue, randomIndex;
+            while (0 !== currentIndex) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+            return array;
+        }
+        //----------------------------------
+        var group1=[1,2,3,4,5,6,7,8,9,10,11,12];
+        var group1_random=random_array(group1);
+        //----------------------------------
+        var I=-1;
+        var N=img_array.length;
+        $('#D__ID').on('load',function(){
+            I=-1;
+        })
+        $('#start__ID').on('click',function(){
+            if(I<0){
+                I=0;
+                set_img();
+            }
+            else{
+                I=0
+            }
+        })
+        $('#stop__ID').on('click',function(){
+            I=-1;
+        })
+        var set_img=function(){
+            if(I>=0 && I<=11){  //total 12 images
+                var new_I=I+1;
+                if(new_I>=1 && new_I<=12) new_I=group1_random[new_I-1];
+                $("#img__ID").attr("src",img_array[I].src);
+                setTimeout(set_img, img_array[I].time);
+                I++;
+            }
+        }
+    }
+</script>
+<style>
+    VmInclude:__COMPONENT__/style/default.css
+</style>

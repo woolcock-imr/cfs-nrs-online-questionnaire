@@ -1,0 +1,130 @@
+{
+	"modules":
+	{
+		"Medical_history":{"table_id":"20010385","url":"modules/edc/task/medical_history.html","name_for_search":" Medical history","form_module":"Medical_history_form"},
+		"Medical_history_form":{"table_id":"20010385","url":"modules/edc/task/medical_history.form.html"},
+		"Adverse_Event":{"table_id":"20010389","url":"modules/edc/task/Adverse_Event.html","name_for_search":" Adverse Event"},
+		"Concom_Medication":{"table_id":"20010390","url":"modules/edc/task/concom_medication.html","name_for_search":"Concomitant Medication","form_module":"Concom_Medication_Form"},
+		"Concom_Medication_Form":{"table_id":"20010390","url":"modules/edc/task/concom_medication.form.html"},
+		"File_Notes":{"table_id":"20010386","url":"modules/edc/task/File_Notes.html","name_for_search":"File Notes"},
+
+
+		"Screening_Visitdate":{"table_id":"20010391","url":"modules/edc/task/Date_of_Visit.html","name_for_search":"Screening Visit Date"},
+		"Screening_Anthro":{"table_id":"20010392","url":"modules/edc/task/Anthro.html","name_for_search":"Screening Anthropometry"},
+		"Screening_Actigraphy":{"table_id":"20010393","url":"modules/edc/task/Actigraphy.html","name_for_search":"Screening Actigraphy "},
+		"Screening_Sleepdiary":{"table_id":"20010394","url":"modules/edc/task/File_upload.html","name_for_search":"Screening Sleep Diary"},
+		"Screening_DiagnosticPSG":{"table_id":"20010395","url":"modules/edc/task/PSG300.html","name_for_search":"Diagnostic Sleep Report"},
+		"Screening_EDF":{"table_id":"20010396","url":"modules/edc/task/EDF_File_upload.html","name_for_search":"EDF file upload"},
+		"Screening_Sleepscoring":{"table_id":"20010397","url":"modules/edc/task/File_upload.html","name_for_search":"Sleep scoring file upload"},
+		"Screening_IncluExclu":{"table_id":"20010398","url":"modules/edc/task/IncluExclu.html","name_for_search":"Inclusion Exclusion Criteria","form_module":"Screening_IncluExclu_form"},
+		"Screening_IncluExclu_form":{"table_id":"20010398","url":"modules/edc/task/IncluExclu.form.html"},
+
+
+		"Screening_ESS":{"table_id":"20010403","url":"modules/edc/task/Epworth_Sleepiness_Scale.html","name_for_search":"Screening Epworth Sleepiness Scale (ESS)","form_module":"Screening_ESS_form","task":"Screening Epworth Sleepiness Scale (ESS)"},
+		"Screening_ESS_form":{"table_id":"20010403","url":"modules/edc/task/Epworth_Sleepiness_Scale_form.html"},
+		"Screening_MFSI":{"table_id":"20010399","url":"modules/edc/task/mfsi.html","name_for_search":"Screening Multidimensional Fatigue Symptom Inventory","form_module":"Screening_MFSI_form","task":"Screening Multidimensional Fatigue Symptom Inventory (MFSI-SF)"},
+		"Screening_MFSI_form":{"table_id":"20010399","url":"modules/edc/task/mfsi_form.html"},
+		"Screening_PSQI":{"table_id":"20010400","url":"modules/edc/task/psqi.html","name_for_search":"Screening Pittsburgh Sleep Quality Index (PSQI)","form_module":"Screening_PSQI_Form","task":"Screening Pittsburgh Sleep Quality Index (PSQI)"},
+		"Screening_PSQI_Form":{"table_id":"20010400","url":"modules/edc/task/psqi.form.html"},
+		"Screening_DASS":{"table_id":"20010401","url":"modules/edc/task/dass.html","name_for_search":"Screening DASS","form_module":"Screening_DASS_form","form_module":"Screening Depression Anxiety and Stress Scale (DASS-21)"},
+		"Screening_DASS_form":{"table_id":"20010401","url":"modules/edc/task/dass.form.html"},
+		"Screening_Chalder":{"table_id":"20010402","url":"modules/edc/task/chalder.html","name_for_search":"Screening Chalder Fatigue Scale","form_module":"Screening_Chalder_form","form_module":"Screening Chalder Fatigue Scale"},
+		"Screening_Chalder_form":{"table_id":"20010402","url":"modules/edc/task/chalder_form.html"},
+		"Screening_Canadian":{"table_id":"20010404","url":"modules/edc/task/Canadian.html","name_for_search":"Screening Canadian Consensus Severity Scale","form_module":"Screening_Canadian_form","form_module":"Screening Canadian Consensus Symptom Severity Scale"},
+		"Screening_Canadian_form":{"table_id":"20010404","url":"modules/edc/task/Canadian_form.html"},
+		"Screening_SFH":{"table_id":"20010405","url":"modules/edc/task/short_form_survey_instrument.html","name_for_search":"Screening Short form Health Survey","form_module":"Screening_SFH_form","form_module":"Screening Short Form Health Survey (SF-36)"},
+		"Screening_SFH_form":{"table_id":"20010405","url":"modules/edc/task/short_form_survey_instrument.form.html"},
+
+
+		"Night_Visit_Date":{"table_id":"20010406","url":"modules/edc/task/Date_of_Visit.html","name_for_search":"Baseline Visit Date"},
+		"Night_Visit_Anthro":{"table_id":"20010407","url":"modules/edc/task/Anthro.html","name_for_search":"Baseline Anthropometry"},
+		"Night_Visit_Flinders":{"table_id":"20010408","url":"modules/edc/task/Flinders.html","name_for_search":"Night Flinders Fatigue Scale","form_module":"Night_Visit_Flinders_form","task":"Flinders Fatigue Scale"},
+		"Night_Visit_Flinders_form":{"table_id":"20010408","url":"modules/edc/task/Flinders_form.html"},
+		"NightVisit_EDF":{"table_id":"20010410","url":"modules/edc/task/EDF_File_upload.html","name_for_search":"EDF file upload"},
+		"Night_Visit_Sleepscoring":{"table_id":"20010409","url":"modules/edc/task/File_upload.html","name_for_search":"Sleep scoring file upload"},
+
+
+		"Mental_Fatigue_One":{"table_id":"20011125","url":"modules/edc/task/Mentalscale.html","name_for_search":"Mental Fatigue Scale 1.0","form_module":"Mental_Fatigue_One_form","task":"Mental Fatigue Scale 1"},
+		"Mental_Fatigue_One_form":{"table_id":"20011125","url":"modules/edc/task/Mentalscale.form.html"},
+		"Mental_Fatigue_Two":{"table_id":"20011126","url":"modules/edc/task/Mentalscale.html","name_for_search":"Mental Fatigue Scale 1.1","form_module":"Mental_Fatigue_Two_form","task":"Mental Fatigue Scale 2"},
+		"Mental_Fatigue_Two_form":{"table_id":"20011126","url":"modules/edc/task/Mentalscale.form.html"},
+		"Mental_Fatigue_Three":{"table_id":"20011127","url":"modules/edc/task/Mentalscale.html","name_for_search":"Mental Fatigue Scale 1.2","form_module":"Mental_Fatigue_Three_form","task":"Mental Fatigue Scale 3"},
+		"Mental_Fatigue_Three_form":{"table_id":"20011127","url":"modules/edc/task/Mentalscale.form.html"},
+		"Mental_Fatigue_Four":{"table_id":"20011128","url":"modules/edc/task/Mentalscale.html","name_for_search":"Mental Fatigue Scale 1.3","form_module":"Mental_Fatigue_Four_form","task":"Mental Fatigue Scale 4"},
+		"Mental_Fatigue_Four_form":{"table_id":"20011128","url":"modules/edc/task/Mentalscale.form.html"},
+		"Mental_Fatigue_Five":{"table_id":"20011130","url":"modules/edc/task/Mentalscale.html","name_for_search":"Mental Fatigue Scale 1.4","form_module":"Mental_Fatigue_Five_form","task":"Mental Fatigue Scale 5"},
+		"Mental_Fatigue_Five_form":{"table_id":"20011130","url":"modules/edc/task/Mentalscale.form.html"},
+		"Mental_Fatigue_six":{"table_id":"20011305","url":"modules/edc/task/Mentalscale.html","name_for_search":"Mental Fatigue Scale 2.0","form_module":"Mental_Fatigue_six_form","task":"Mental Fatigue Scale 6"},
+		"Mental_Fatigue_six_form":{"table_id":"20011305","url":"modules/edc/task/Mentalscale.form.html"},
+		"Mental_Fatigue_seven":{"table_id":"20011306","url":"modules/edc/task/Mentalscale.html","name_for_search":"Mental Fatigue Scale 2.1","form_module":"Mental_Fatigue_seven_form","task":"Mental Fatigue Scale 7"},
+		"Mental_Fatigue_seven_form":{"table_id":"20011306","url":"modules/edc/task/Mentalscale.form.html"},
+
+
+
+		"NightVisit_ERP":{"table_id":"20010411","url":"modules/edc/task/File_upload.html","name_for_search":"ERP file upload"},
+
+
+		"NightVisit_Memorytask_Fileupload":{"table_id":"20011129","url":"modules/edc/task/Memtest.html","name_for_search":"Evening Memory task tests"},
+
+
+		"Morning_visit_KDT":{"table_id":"20010413","url":"modules/edc/task/KDT.html","name_for_search":"Baseline  Karolinska Drowsiness Test (KDT)"},
+		"Morning_visit_word_pair_Set_1":{"table_id":"--------","url":"modules/edc/task/morning_word_pair_set_1.html","name_for_search":"Baseline Morning Word Pair 1","form_module":"Morning Word Pair 1"},
+		"Morning_visit_word_pair_Set_2":{"table_id":"--------","url":"modules/edc/task/morning_word_pair_set_2.html","name_for_search":"Baseline Morning Word Pair 2","form_module":"Morning Word Pair 2"},
+		"Morning_visit_LDT_Test_Set_1":{"table_id":"--------","url":"modules/edc/task/LDT_Morning_Set1.html', notes: 'Baseline Morning Lexical Decision Task 1","form_module":"Morning Lexical Decision Task 1"},
+		"Morning_visit_LDT_Test_Set_2":{"table_id":"--------","url":"modules/edc/task/LDT_Morning_Set2.html', notes: 'Baseline Morning Lexical Decision Task 2","form_module":"Morning Lexical Decision Task 2"},
+		"Morning_LCT":{"table_id":"20010416","url":"modules/edc/task/LCT.html","name_for_search":"Morning Letter Cancellation Task","form_module":"Morning_LCT_form","task":"Morning Letter cancellation Task"},
+		"Morning_LCT_Form":{"table_id":"20010416","url":"modules/edc/task/LCT_form.html"},
+		"Morning_ERP":{"table_id":"20010415","url":"modules/edc/task/ERP.html","name_for_search":"Morning Event Related Potential","form_module":"Morning_ERP","task":"Morning Event Related Potential"},
+		"Morning_PASAT":{"table_id":"20010417","url":"modules/edc/task/PASAT.html","name_for_search":"Morning Paced Auditory Serial Addition Test","form_module":"Morning_PASAT","task":"Morning Paced Auditory Serial Addition Tests (PASAT)"},
+		"Morning_PASAT_Form":{"table_id":"20010417","url":"modules/edc/task/PASAT_form.html"},
+		"Morning_BloodSaliva":{"table_id":"20010419","url":"modules/edc/task/Bloodsaliva.html","name_for_search":"Morning Blood and Saliva Samples"},
+		"Morning_MRI":{"table_id":"20010420","url":"modules/edc/task/MRI.html","name_for_search":"Magnetic Resonance Imagining (MRI)"},
+		"Morning_KDT":{"table_id":"--------","url":"modules/edc/task/KDT.html","name_for_search":"Morning End Karolinska Drowsiness Test (KDT)"},
+
+
+		"Prac_Evening_Wordpairs_Set1":{"table_id":"20009358","url":"modules/edc/task/Set1_Evening_Wordpairs_Practice.html","name_for_search":"Memory task - Word pairs Set 1","form_module":"Evening Practice Word Pair 1"},
+		"Prac_Evening_Wordpairs_Set2":{"table_id":"20009358","url":"modules/edc/task/Set2_evening_wordpairs_Practice.html","name_for_search":"Memory task - Word pairs Set 1","form_module":"Evening Practice Word Pair 2"},
+		"wordpairs1t1":{"table_id":"20009358","url":"modules/edc/task/Set1_Evening_Wordpairs.html","name_for_search":"Memory task - Word pairs Set 1","form_module":"Evening Word Pair 1"},
+		"wordpairs2t1":{"table_id":"20009358","url":"modules/edc/task/Set2_evening_wordpairs.html","name_for_search":"Memory task - Word pairs Set 2","form_module":"Evening Word Pair 1"},
+		"wordpairs1t2":{"table_id":"20009358","url":"modules/edc/task/Set1_Evening_Wordpairs.html","name_for_search":"Memory task - Word pairs Set 1","form_module":"Evening Word Pair 1"},
+		"wordpairs2t2":{"table_id":"20009358","url":"modules/edc/task/Set2_evening_wordpairs.html","name_for_search":"Memory task - Word pairs Set 2","form_module":"Evening Word Pair 1"},
+		"wordpairs1t3":{"table_id":"20009358","url":"modules/edc/task/Set1_Evening_Wordpairs.html","name_for_search":"Memory task - Word pairs Set 1","form_module":"Evening Word Pair 1"},
+		"wordpairs1t4":{"table_id":"20009358","url":"modules/edc/task/Set1_Evening_Wordpairs.html","name_for_search":"Memory task - Word pairs Set 1","form_module":"Evening Word Pair 1"},
+		"wordpairs2t3":{"table_id":"20009358","url":"modules/edc/task/Set2_evening_wordpairs.html","name_for_search":"Memory task - Word pairs Set 2","form_module":"Evening Word Pair 1"},
+		"wordpairs2t4":{"table_id":"20009358","url":"modules/edc/task/Set2_evening_wordpairs.html","name_for_search":"Memory task - Word pairs Set 1","form_module":"Evening Word Pair 1"},
+		"Morning_word_pair_Set_1":{"table_id":"20009358","url":"modules/edc/task/Set1_Morning_Wordpairs.html","name_for_search":"Memory task - Word pairs Set 1","form_module":"Morning Word Pair 1"},
+		"Morning_word_pair_Set_2":{"table_id":"20009358","url":"modules/edc/task/Set2_morning_wordpairs.html","name_for_search":"Memory task - Word pairs Set 1","form_module":"Morning Word Pair 1"},
+
+
+		"KSS1":{"table_id":"20011302","url":"modules/edc/task/kss.html","name_for_search":"Karolinska Sleepiness Scale (KSS)","form_module":"kss_Quest1","form_module":"Karolinska Sleepiness Scale 1.0"},
+		"kss_Quest1":{"table_id":"20011302","url":"modules/edc/task/kss.QUEST.html"},
+		"KSS2":{"table_id":"20011303","url":"modules/edc/task/kss.html","name_for_search":"Karolinska Sleepiness Scale (KSS)","form_module":"kss_Quest2","form_module":"Karolinska Sleepiness Scale 1.0"},
+		"kss_Quest2":{"table_id":"20011303","url":"modules/edc/task/kss.QUEST.html"},
+		"KSS3":{"table_id":"20011304","url":"modules/edc/task/kss.html","name_for_search":"Karolinska Sleepiness Scale (KSS)","form_module":"kss_Quest3","form_module":"Karolinska Sleepiness Scale 1.0"},
+		"kss_Quest3":{"table_id":"20011304","url":"modules/edc/task/kss.QUEST.html"},
+		"Morning_Memorytask_Fileupload":{"table_id":"20011341","url":"modules/edc/task/File_upload.html"},
+		"quest_list":{
+		   "list":{
+		     "Screening":[
+				{"table_id":"20010403","task_name":"Screening Epworth Sleepiness Scale (ESS)"},
+		 		{"table_id":"20010399","task_name":"Screening Multidimensional Fatigue Symptom Inventory"},
+		 		{"table_id":"20010400","task_name":"Screening Pittsburgh Sleep Quality Index (PSQI)"},
+		 		{"table_id":"20010401","task_name":"Screening DASS"},
+		 		{"table_id":"20010402","task_name":"Screening Chalder Fatigue Scale"},
+		 		{"table_id":"20010405","task_name":"Screening Short form Health Survey"},
+				{"table_id":"20010404","task_name":"Screening Canadian Consensus Severity Scale"}
+		     ],
+			 "Baseline Evening Questionnaires":[
+			   {"table_id":"20010408","url":"modules/edc/task/Flinders.html","task_name":"Flinders Fatigue Scale"}
+		     ],
+			 "Mental Fatigue Scales":[
+				{"table_id":"20011125","task_name":"Mental Fatigue Scale 1"},
+		  		{"table_id":"20011126","task_name":"Mental Fatigue Scale 2"},
+		  		{"table_id":"20011127","task_name":"Mental Fatigue Scale 3"},
+		  		{"table_id":"20011128","task_name":"Mental Fatigue Scale 4"},
+		  		{"table_id":"20011130","task_name":"Mental Fatigue Scale 5"}
+		     ]
+		   }
+		}
+	}
+}

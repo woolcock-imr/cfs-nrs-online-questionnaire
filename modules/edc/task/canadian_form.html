@@ -1,0 +1,228 @@
+<section>
+    VmInclude:__COMPONENT__/toolbar/back_save.html
+	<form id=F__ID>
+        <table id=tb__ID style='width:770px;'>
+            <colgroup>
+                <col style='width:80px; text-align: center' />
+                <col style='width:400px' />
+                <col style='width:80px' />
+                <col style='width:80px' />
+                <col style='width:80px' />
+                <col style='width:80px' />
+            </colgroup>
+
+            <tr><td colspan=6 class='header__ID'>Canadian Consensus Severity Scale</td></tr>
+
+            <tr id=tr_participant__ID style='display:none'><td colspan=6 data-id=Participant data-custom=1>
+                <input name=Participant  id=Participant__ID  type=text class=sel__ID placeholder='select a partcipant...'/>
+                <input name=Participant_uid id=Participant_uid__ID type=text readonly style="width:50px;color:#ccc;" />
+                <u style='cursor:pointer;float:right;' id=Participant_r__ID>Remove</u>
+            </td></tr>
+
+            <tr><td colspan=6 ><br>Below is a list of statements that describe how people sometimes feel. Please read each item carefully, then click on one number next to each item which best describes how true each statement has been for you in the past 7 days.
+            </i></b><br><br>
+            </td></tr>
+
+            <tr><td class=C__ID___answ> Rank </td><td class=C__ID___answ>Symptom</td> <td class=C__ID___answ>Absent</td><td class=C__ID___answ>Mild</td><td class=C__ID___answ>Moderate</td><td class=C__ID___answ>Severe</td></tr>
+
+
+            <tr><td data-id=rank_1 data-custom=1></td><td data-id=ccss_1 data-custom=1><b> 1.Post exertional fatigue:</b> Loss of physical and mental stamina, fatigue made worse by physical exertion </td><td><input type=radio value=0 name=ccss_1  /></td><td><input type=radio value=1 name=ccss_1 /></td><td><input type=radio value=2 name=ccss_1 /></td><td><input type=radio value=3 name=ccss_1 /></td></tr>
+            <tr><td data-id=rank_2 data-custom=1></td><td data-id=ccss_2 data-custom=1><b> 2.Long recovery period of exertion:</b> Takes more than 24 hours to recover to pre-exertion activity levels</td><td><input type=radio value=0 name=ccss_2   /></td><td><input type=radio value=1 name=ccss_2   /></td><td><input type=radio value=2 name=ccss_2 /></td><td><input type=radio value=3 name=ccss_2 /></td></tr>
+            <tr><td data-id=rank_3 data-custom=1></td><td data-id=ccss_3 data-custom=1><b>3. Fatigue:</b> Persistent, marked fatigue that substantially reduces activity level</td><td><input type=radio value=0 name=ccss_3   /></td><td><input type=radio value=1 name=ccss_3 /></td><td><input type=radio value=2 name=ccss_3 /></td><td><input type=radio value=3 name=ccss_3 /></td></tr>
+            <tr><td data-id=rank_4 data-custom=1></td><td data-id=ccss_4 data-custom=1><b>4.Sleep Disturbances:</b> Non-restorative sleep, insomnia, hypersomnia</td><td><input type=radio value=0 name=ccss_4 /></td><td><input type=radio value=1 name=ccss_4   /></td><td><input type=radio value=2 name=ccss_4 /></td><td><input type=radio value=3 name=ccss_4 /></td></tr>
+            <tr><td data-id=rank_5 data-custom=1></td><td data-id=ccss_5 data-custom=1><b>5.Pain:</b> In muscles, joints, headaches</td><td><input type=radio value=0 name=ccss_5 /></td><td><input type=radio value=1 name=ccss_5   /></td><td><input type=radio value=2 name=ccss_5  /></td><td><input type=radio value=3 name=ccss_5 /></td></tr>
+            <tr><td data-id=rank_6 data-custom=1></td><td data-id=ccss_6 data-custom=1><b>6.Memory Disturbances:</b> Poor short term memory</td><td><input type=radio value=0 name=ccss_6 /></td><td><input type=radio value=1 name=ccss_6   /></td><td><input type=radio value=2 name=ccss_6  /></td><td><input type=radio value=3 name=ccss_6 /></td></tr>
+            <tr><td data-id=rank_7 data-custom=1></td><td data-id=ccss_7 data-custom=1><b>7.Confusion and difficult concentrating</b></td><td><input type=radio value=0 name=ccss_7 /></td><td><input type=radio value=1 name=ccss_7   /></td><td><input type=radio value=2 name=ccss_7  /></td><td><input type=radio value=3 name=ccss_7 /></td> </td></tr>
+            <tr><td data-id=rank_8 data-custom=1></td><td data-id=ccss_8 data-custom=1><b>8.Difficulty retrieving words, or saying ther wrong words</b></td><td><input type=radio value=0 name=ccss_8  /></td><td><input type=radio value=1 name=ccss_8   /></td><td><input type=radio value=2 name=ccss_8 /></td><td><input type=radio value=3 name=ccss_8   /></td></tr>
+            <tr><td data-id=rank_9 data-custom=1></td><td data-id=ccss_9 data-custom=1><b>9.Gastrointestinal disturbances:</b> Diarrhoea, Irritable Bowel Syndrome</td><td><input type=radio value=0 name=ccss_9  /></td><td><input type=radio value=1 name=ccss_9   /></td><td><input type=radio value=2 name=ccss_9   /></td><td><input type=radio value=3 name=ccss_9   /></td></tr>
+            <tr><td data-id=rank_10 data-custom=1></td><td data-id=ccss_10 data-custom=1><b>10.Recurrent sore throat</b> </td><td><input type=radio value=0 name=ccss_10  /></td><td><input type=radio value=1 name=ccss_10   /></td><td><input type=radio value=2 name=ccss_10   /></td><td><input type=radio value=3 name=ccss_10   /></td></tr>
+            <tr><td data-id=rank_11 data-custom=1></td><td data-id=ccss_11 data-custom=1><b>11.Recurrent Flu like Symptoms</td><td><input type=radio value=0 name=ccss_11  /></td><td><input type=radio value=1 name=ccss_11   /></td><td><input type=radio value=2 name=ccss_11   /></td><td><input type=radio value=3 name=ccss_11   /></td></tr>
+            <tr><td data-id=rank_12 data-custom=1></td><td data-id=ccss_12 data-custom=1><b>12.Dizziness upon standing or light-headedness</td><td><input type=radio value=0 name=ccss_12  /></td><td><input type=radio value=1 name=ccss_12   /></td><td><input type=radio value=2 name=ccss_12   /></td><td><input type=radio value=3 name=ccss_12   /></td></tr>
+            <tr><td data-id=rank_13 data-custom=1></td><td data-id=ccss_13 data-custom=1><b>13.Change in body temperature, erratic body temperature, cold hand and feet</td><td><input type=radio value=0 name=ccss_13  /></td><td><input type=radio value=1 name=ccss_13   /></td><td><input type=radio value=2 name=ccss_13   /></td><td><input type=radio value=3 name=ccss_13   /></td></tr>
+            <tr><td data-id=rank_14 data-custom=1></td><td data-id=ccss_14 data-custom=1><b>14.Heat/cold intolerance</b></td><td><input type=radio value=0 name=ccss_14  /></td><td><input type=radio value=1 name=ccss_14  /></td><td><input type=radio value=2 name=ccss_14   /></td><td><input type=radio value=3 name=ccss_14   /></td></tr>
+            <tr><td data-id=rank_15 data-custom=1></td><td data-id=ccss_15 data-custom=1><b>15.Hot flushes, sweating episodes</b> </td><td><input type=radio value=0 name=ccss_15  /></td><td><input type=radio value=1 name=ccss_15   /></td><td><input type=radio value=2 name=ccss_15   /></td><td><input type=radio value=3 name=ccss_15   /></td></tr>
+            <tr><td data-id=rank_16 data-custom=1></td><td data-id=ccss_16 data-custom=1><b>16.Marked weight changes</b></td><td><input type=radio value=0 name=ccss_16  /></td><td><input type=radio value=1 name=ccss_16 /></td> <td> <input type=radio value=2 name=ccss_16 /></td><td><input type=radio value=3 name=ccss_16   /></td></tr>
+            <tr><td data-id=rank_17 data-custom=1></td><td data-id=ccss_17 data-custom=1><b>17.Breathlessness with exertion</b></td><td><input type=radio value=0 name=ccss_17  /></td><td><input type=radio value=1 name=ccss_17 /><td><input type=radio value=2 name=ccss_17 /></td><td><input type=radio value=3 name=ccss_17 /></td></tr>
+            <tr><td data-id=rank_18 data-custom=1></td><td data-id=ccss_18 data-custom=1><b>18.Tender Lymph Nodes</b> - especially at the sides of neck and under arms </td><td><input type=radio value=0 name=ccss_18  /></td><td><input type=radio value=1 name=ccss_18   /></td><td><input type=radio value=2 name=ccss_18   /></td><td><input type=radio value=3 name=ccss_18   /></td></tr>
+            <tr><td data-id=rank_19 data-custom=1></td><td data-id=ccss_19 data-custom=1><b>19.Senstive to light, noise or odour</b></td><td><input type=radio value=0 name=ccss_19  /></td><td><input type=radio value=1 name=ccss_19   /></td><td><input type=radio value=2 name=ccss_19   /></td><td><input type=radio value=3 name=ccss_19   /></td></tr>
+            <tr><td data-id=rank_20 data-custom=1></td><td data-id=ccss_20 data-custom=1><b>20.Muscle Weakness</b></td><td><input type=radio value=0 name=ccss_20 /></td><td><input type=radio value=1 name=ccss_20   /></td><td><input type=radio value=2 name=ccss_20   /></td><td><input type=radio value=3 name=ccss_20   /></td></tr>
+            <tr><td data-id=rank_21 data-custom=1></td><td data-id=ccss_21 data-custom=1><b>21.New sensitivities to food/medications/chemicals</b></td><td><input type=radio value=0 name=ccss_21  /></td><td><input type=radio value=1 name=ccss_21   /></td><td><input type=radio value=2 name=ccss_21   /></td><td><input type=radio value=3 name=ccss_21   /></td></tr>
+          </table><br>&nbsp;<a id=save2__ID class=save_and_back__ID >Save &amp; Back</a>
+
+    </form>
+</section>
+<script>
+    function F__ID(){
+        //----------------------------------
+        VmInclude:__COMPONENT__/grid/form.v3.js
+        VmInclude:__CURRENT_PATH__/task.form.js
+        _json='';
+        //----------------------------------
+        $('#D__ID').on('load',function(){
+            _init();
+            _field_process();
+            _task_fields=$vm.vm['__ID'].op.grid_to_form_parameters.task_fields;
+            _set_participant_field();
+            custom_field_process();
+        })
+        //----------------------------------
+        var custom_field_process=function(){
+            $('#tb__ID td[data-custom=1]').each(function(){
+                var field=$(this).attr('data-id');
+                switch(field){
+		    case "rank_1":
+		    case "rank_2":
+		    case "rank_3":
+		    case "rank_4":
+		    case "rank_5":
+        case "rank_6":
+        case "rank_7":
+        case "rank_8":
+        case "rank_9":
+        case "rank_10":
+        case "rank_11":
+        case "rank_12":
+        case "rank_13":
+        case "rank_14":
+        case "rank_15":
+        case "rank_16":
+        case "rank_17":
+        case "rank_18":
+        case "rank_19":
+        case "rank_20":
+		    case "rank_21":
+
+		    	$(this).html("<select><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option></select>")
+			$(this).find("select").val(_records[I][field]);
+			$(this).find("select").on('change',function(){
+				_set_value($(this).val(),_records,I,field);
+			})
+		    	break;
+                    case "Participant":
+                        $(this).find("input[name='"+field+"']").val(_records[I].Participant);
+                        $(this).find("input[name='"+field+"_uid']").val(_records[I].Participant_uid);
+                    break;
+                    case "ccss_1":
+                    case "ccss_2":
+                    case "ccss_3":
+                    case "ccss_4":
+                    case "ccss_5":
+                    case "ccss_6":
+                    case "ccss_7":
+                    case "ccss_8":
+                    case "ccss_9":
+                    case "ccss_10":
+                    case "ccss_11":
+                    case "ccss_12":
+                    case "ccss_13":
+                    case "ccss_14":
+                    case "ccss_15":
+                    case "ccss_16":
+                    case "ccss_17":
+                    case "ccss_18":
+                    case "ccss_19":
+                    case "ccss_20":
+                    case "ccss_21":
+
+                        $('#tb__ID').find("input[name='"+field+"'][value='"+_records[I][field]+"']").prop('checked', true);
+                        $('#tb__ID').find("input[name='"+field+"']").on('click',function(){
+                            _set_value(this.value,_records,I,field);
+                        })
+                    break;
+                    case "rank_1":
+                    case "rank_2":
+                        $('#tb__ID').find("input[name='"+field+"']").val(_records[I][field])
+                        $('#tb__ID').find("input[name='"+field+"']").on('change',function(){
+                            _set_value(this.value,_records,I,field);
+                        })
+                    break;
+                }
+            })
+        }
+        //----------------------------------
+        _before_submit_form=function(){
+		//validation for rank
+		for(var i=1;i<=21;i++){
+			var v1=_records[I]['rank_'+i];
+			if(v1==''){
+				alert("Please rank Symptom "+i+".");
+				return false;
+			}
+			for(var j=i+1;j<=21;j++){
+				var v2=_records[I]['rank_'+j];
+				if(v1==v2){
+					alert("We found two ranks with same value ("+v1+")");
+					return false;
+				}
+			}
+		}
+
+
+            if( $('#tb__ID').find('input[name=ccss_1]:checked').val()===undefined){ alert("Please answer question 1"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_2]:checked').val()===undefined){ alert("Please answer question 2"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_3]:checked').val()===undefined){ alert("Please answer question 3"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_4]:checked').val()===undefined){ alert("Please answer question 4"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_5]:checked').val()===undefined){ alert("Please answer question 5"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_6]:checked').val()===undefined){ alert("Please answer question 6"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_7]:checked').val()===undefined){ alert("Please answer question 7"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_8]:checked').val()===undefined){ alert("Please answer question 8"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_9]:checked').val()===undefined){ alert("Please answer question 9"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_10]:checked').val()===undefined){ alert("Please answer question 30"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_11]:checked').val()===undefined){ alert("Please answer question 10"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_12]:checked').val()===undefined){ alert("Please answer question 11"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_13]:checked').val()===undefined){ alert("Please answer question 12"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_14]:checked').val()===undefined){ alert("Please answer question 13"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_15]:checked').val()===undefined){ alert("Please answer question 14"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_16]:checked').val()===undefined){ alert("Please answer question 15"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_17]:checked').val()===undefined){ alert("Please answer question 16"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_18]:checked').val()===undefined){ alert("Please answer question 17"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_19]:checked').val()===undefined){ alert("Please answer question 18"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_20]:checked').val()===undefined){ alert("Please answer question 19"); return false; }
+            if( $('#tb__ID').find('input[name=ccss_21]:checked').val()===undefined){ alert("Please answer question 20"); return false; }
+
+            var mild=0;
+            var moderate=0;
+            var severe=0;
+            var v1=parseInt($('#tb__ID').find('input[name=ccss_1]:checked').val());
+            if(v1==1) mild++;
+            else if(v1==2) moderate++;
+            else if(v1==3) severe++;
+        	var v2=parseInt($('#tb__ID').find('input[name=ccss_2]:checked').val());
+            if(v2==1) mild++;
+            else if(v2==2) moderate++;
+            else if(v2==3) severe++;
+        	var v3=parseInt($('#tb__ID').find('input[name=ccss_3]:checked').val());
+            if(v3==1) mild++;
+            else if(v3==2) moderate++;
+            else if(v3==3) severe++;
+        	var v4=parseInt($('#tb__ID').find('input[name=ccss_4]:checked').val());
+        	var v5=parseInt($('#tb__ID').find('input[name=ccss_5]:checked').val());
+        	var v6=parseInt($('#tb__ID').find('input[name=ccss_6]:checked').val());
+        	var v7=parseInt($('#tb__ID').find('input[name=ccss_7]:checked').val());
+        	var v8=parseInt($('#tb__ID').find('input[name=ccss_8]:checked').val());
+        	var v9=v1+v2+v3+v4+v5+v6+v7+v8;
+            _records[I].ccss_total=v9;
+            _records[I].ccss_Mild=mild;
+            _records[I].ccss_Moderate=moderate;
+            _records[I].ccss_Severe=severe;
+
+            return true;
+        }
+        //----------------------------------
+    }
+</script>
+<style>
+    VmInclude:__COMPONENT__/toolbar/toolbar.css
+    VmInclude:__COMPONENT__/grid/form.css
+    #tb__ID tr td:nth-child(1),
+    #tb__ID tr td:nth-child(3),
+    #tb__ID tr td:nth-child(4),
+    #tb__ID tr td:nth-child(5),
+    #tb__ID tr td:nth-child(6)
+
+    {
+        text-align: center;
+        padding-top: 5px;
+    }
+
+</style>

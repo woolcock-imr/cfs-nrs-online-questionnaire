@@ -1,0 +1,238 @@
+<section>
+    <div id=toolbar__ID>
+          <a id=back__ID>Back</a> <a id=start__ID>Start</a> <a id=stop__ID>Stop</a>
+    </div>
+    <img id=img__ID />
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+        VmInclude:__COMPONENT__/toolbar/back.js
+        //-------------------------------------
+        var img_array=[
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_1.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_2.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_3.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_4.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_5.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_6.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_7.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_8.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_9.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_10.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_11.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_12.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_13.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_14.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_15.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_16.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_17.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_18.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_19.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_20.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_21.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_22.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_23.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_24.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_25.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_26.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_27.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_28.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_29.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_30.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_31.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Pres/pres_32.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/evening_word_pair_v1/2.Slide33.jpg',time:3000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/sent_17.jpg',time:25000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/sent_18.jpg',time:25000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/sent_19.jpg',time:25000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/sent_20.jpg',time:25000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/sent_21.jpg',time:25000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/sent_22.jpg',time:25000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/sent_23.jpg',time:25000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/sent_24.jpg',time:25000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/sent_25.jpg',time:25000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/sent_26.jpg',time:25000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/sent_27.jpg',time:25000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/sent_28.jpg',time:25000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/sent_29.jpg',time:25000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/sent_30.jpg',time:25000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/sent_31.jpg',time:25000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/sent_32.jpg',time:25000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/syl_1.jpg',time:10000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/syl_2.jpg',time:10000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/syl_3.jpg',time:10000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/syl_4.jpg',time:10000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/syl_5.jpg',time:10000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/syl_6.jpg',time:10000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/syl_7.jpg',time:10000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/syl_8.jpg',time:10000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/syl_9.jpg',time:10000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/syl_10.jpg',time:10000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/syl_11.jpg',time:10000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/syl_12.jpg',time:10000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/syl_13.jpg',time:10000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/syl_14.jpg',time:10000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/syl_15.jpg',time:10000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/V2/syl_16.jpg',time:10000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/evening_word_pair_v1/5.Slide67.jpg',time:5000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_67.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_68.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_69.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_70.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_71.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_72.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_73.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_74.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_75.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_76.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_77.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_78.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_79.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_80.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_81.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_82.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_83.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_84.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_85.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_86.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_87.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_88.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_89.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_90.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_91.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_92.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_93.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_94.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_95.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_96.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_97.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recall/recall_98.jpg',time:12000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/evening_word_pair_v1/8.Slide100.jpg',time:3000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_100a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_100b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_101a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_101b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_102a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_102b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_103a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_103b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_104a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_104b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_105a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_105b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_106a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_106b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_107a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_107b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_108a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_108b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_109a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_109b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_110a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_110b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_111a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_111b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_112a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_112b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_113a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_113b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_114a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_114b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_115a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_115b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_116a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_116b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_117a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_117b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_118a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_118b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_119a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_119b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_120a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_120b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_121a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_121b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_122a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_122b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_123a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_123b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_124a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_124b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_125a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_125b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_126a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_126b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_127a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_127b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_128a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_128b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_129a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_129b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_130a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_130b.jpg',time:2000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_131a.jpg',time:7000},
+            {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Recognition/recog_131b.jpg',time:2000},
+
+        ]
+        //----------------------------------
+        var random_array=function(array){
+            var currentIndex=array.length, temporaryValue, randomIndex;
+            while (0 !== currentIndex) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+            return array;
+        }
+        //----------------------------------
+        var group1=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32];
+        var group1_random=random_array(group1);
+        var group2=[34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65];
+        var group2_random=random_array(group2);
+        var group3=[67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98];
+        var group3_random=random_array(group3);
+        var group4=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32];
+        var group4_random_0=random_array(group4);
+        var group4_random=[];
+        for(var i=0;i<32;i++){
+            group4_random.push(98+2*group4_random_0[i])
+            group4_random.push(98+2*group4_random_0[i]+1)
+        }
+        //----------------------------------
+        var I=-1;
+        var N=img_array.length;
+        $('#D__ID').on('load',function(){
+            I=-1;
+        })
+        $('#start__ID').on('click',function(){
+            if(I<0){
+                I=0;
+                set_img();
+            }
+            else{
+                I=0
+            }
+        })
+        $('#stop__ID').on('click',function(){
+            I=-1;
+        })
+        var set_img=function(){
+            if(I>=0 && I<=162){
+                var new_I=I+1;
+                if(new_I>=1 && new_I<=32) new_I=group1_random[new_I-1];
+                else if(new_I>=34 && new_I<=65) new_I=group2_random[new_I-34];
+                else if(new_I>=67 && new_I<=98) new_I=group3_random[new_I-67];
+                else if(new_I>=100 && new_I<=163) new_I=group4_random[new_I-100];
+                $("#img__ID").attr("src",img_array[new_I-1].src);
+                setTimeout(set_img, img_array[new_I-1].time);
+                I++;
+            }
+        }
+    }
+</script>
+<style>
+    VmInclude:__COMPONENT__/style/default.css
+</style>
