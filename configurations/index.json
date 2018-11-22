@@ -5,6 +5,6 @@
 	"default_production":"Yes",
 	"panels":{
 		"website":	        		{"url":"","modules":["modules/website/module.json"]},
-		"cpaphdeeg-quest-panel":	{"url":"modules/panel/quest.html","modules":["modules/edc/module.json"]}
+		"cfsnrs-quest-panel":	{"url":"modules/panel/quest.html","modules":["modules/edc/module.json"]}
 	}
 }
