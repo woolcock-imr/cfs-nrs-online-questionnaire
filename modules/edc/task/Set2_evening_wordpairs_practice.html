@@ -1,19 +1,19 @@
 <section>
     <div id=toolbar__ID>
-          <a id=back__ID>Back</a> <a id=start__ID>Start</a> <a id=stop__ID>Stop</a>
+          <a id=start__ID>Start</a> <a id=stop__ID>Stop</a>
     </div>
     <img id=img__ID />
 </section>
 <script>
     function F__ID(){
         //-------------------------------------
-        VmInclude:__COMPONENT__/toolbar/back.js
+        VmInclude:__PARTS__/toolbar/back.js
         //-------------------------------------
         var img_array=[
-          {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Practice/Set2Slide1.jpg',time:5000},
-          {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Practice/Set2Slide2.jpg',time:5000},
-          {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Practice/Set2Slide3.jpg',time:5000},
-          {src:'__BASE__/woolcock-imr/CFS_NRS/images/Set2/Practice/Set2Slide4.jpg',time:5000},]
+          {src:'__CURRENT_PATH__/../../../images/Set2/Practice/Set2Slide1.jpg',time:5000},
+          {src:'__CURRENT_PATH__/../../../images/Set2/Practice/Set2Slide2.jpg',time:5000},
+          {src:'__CURRENT_PATH__/../../../images/Set2/Practice/Set2Slide3.jpg',time:5000},
+          {src:'__CURRENT_PATH__/../../../images/Set2/Practice/Set2Slide4.jpg ',time:5000},]
         //----------------------------------
         /*var random_array=function(array){
             var currentIndex=array.length, temporaryValue, randomIndex;
@@ -69,5 +69,9 @@
     }
 </script>
 <style>
-    VmInclude:__COMPONENT__/style/default.css
+    VmInclude:__PARTS__/style/default.css
+
+    #img__ID {
+    height:1000px!important;
+    }
 </style>
