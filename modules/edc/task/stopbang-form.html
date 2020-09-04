@@ -1,0 +1,148 @@
+<section>
+    VmInclude:__COMPONENT__/toolbar/back_save.html
+	<form id=F__ID>
+        <table id=tb__ID style='width:770px;'>
+            <colgroup><col style='width:450px' />
+                <col style='width:80px;text-align:center!important' />
+                <col style='width:80px' />
+                <col style='width:80px' />
+                <col style='width:80px' />
+            </colgroup>
+
+            <tr><td colspan=5 class='header__ID'>STOPBANG Questionnaire</td></tr>
+
+            <tr id=tr_participant__ID style='display:none'><td colspan=5 data-id=Participant data-custom=1>
+                <input name=Participant  id=Participant__ID  type=text class=sel__ID placeholder='select a partcipant...'/>
+                <input name=Participant_uid id=Participant_uid__ID type=text readonly style="width:50px;color:#ccc;" />
+                <u style='cursor:pointer;float:right;' id=Participant_r__ID>Remove</u>
+            </td></tr>
+
+            <tr><td></td><td class=C__ID___answ><b>No</td><td class=C__ID___answ><b>Yes</b></td></tr>
+
+            <tr><td data-id=SB1 data-custom=1>Do you snore loudly (loud enough to be heard through closed doors or your bed-partner elbows you for snoring at night)?</td>
+                <td><input type=radio value=0 name=SB1 /></td>
+                <td><input type=radio value=1 name=SB1 /></td>
+            </tr>
+            <tr><td data-id=SB2 data-custom=1>Do you often feel tired, fatigued, or sleepy during the daytime (such as falling asleep during driving or talking to
+            someone)?</td>
+                <td><input type=radio value=0 name=SB2 /></td>
+                <td><input type=radio value=1 name=SB2 /></td>
+            </tr>
+            <tr><td data-id=SB3 data-custom=1>Has anyone observed you stop breathing or choking/gasping during your sleep?</td>
+                <td><input type=radio value=0 name=SB3 /></td>
+                <td><input type=radio value=1 name=SB3 /></td>
+            </tr>
+            <tr><td data-id=SB4 data-custom=1>Do you have or are being treated for high blood pressure?</td>
+                <td><input type=radio value=0 name=SB4 /></td>
+                <td><input type=radio value=1 name=SB4 /></td>
+            </tr>
+            <tr>
+                <td data-id=SB5 data-custom=1>Body Mass Index more than 35 kg/m2 ?</td>
+                <td><input type=radio value=0 name=SB5 /></td>
+                <td><input type=radio value=1 name=SB5 /></td>
+            </tr>
+            <tr>
+                <td data-id=SB6 data-custom=1>Age older than 50?</td>
+                <td><input type=radio value=0 name=SB6 /></td>
+                <td><input type=radio value=1 name=SB6 /></td>
+            </tr>
+            <tr>
+                <td data-id=SB7 data-custom=1>Neck size large ? (measured around Adams apple)?</td>
+                <td><input type=radio value=0 name=SB7 /></td>
+                <td><input type=radio value=1 name=SB7 /></td>
+            </tr>
+            <tr>
+                <td data-id=SB8 data-custom=1>For male, is your shirt collar 17 inches/ 43cm or larger? OR For female, is your shirt collar 16 inches/ 41 cm or larger?</td>
+                <td><input type=radio value=0 name=SB8 /></td>
+                <td><input type=radio value=1 name=SB8 /></td>
+            </tr>
+            <tr>
+            <td data-id=SB9 data-custom=1>Gender = Male?</td>
+                <td><input type=radio value=0 name=SB9 /></td>
+                <td><input type=radio value=1 name=SB9 /></td>
+            </tr>
+          </table><br>&nbsp;<a id=save2__ID class=save_and_back__ID >Save &amp; Back</a>
+    </form>
+</section>
+<script>
+    function F__ID(){
+        //----------------------------------
+        VmInclude:__COMPONENT__/grid/form.v3.js
+        VmInclude:__CURRENT_PATH__/task.form.js
+        _json='';
+        //----------------------------------
+        $('#D__ID').on('load',function(){
+            _init();
+            _field_process();
+            _task_fields=$vm.vm['__ID'].op.grid_to_form_parameters.task_fields;
+            _set_participant_field();
+            custom_field_process();
+        })
+        //----------------------------------
+        var custom_field_process=function(){
+            $('#tb__ID td[data-custom=1]').each(function(){
+                var field=$(this).attr('data-id');
+                switch(field){
+                    case "Participant":
+                        $(this).find("input[name='"+field+"']").val(_records[I].Participant);
+                        $(this).find("input[name='"+field+"_uid']").val(_records[I].Participant_uid);
+                    break;
+                    case "SB1":
+                    case "SB2":
+                    case "SB3":
+                    case "SB4":
+                    case "SB5":
+                    case "SB6":
+                    case "SB7":
+                    case "SB8":
+                    case "SB9":
+                        $('#tb__ID').find("input[name='"+field+"'][value='"+_records[I][field]+"']").prop('checked', true);
+                        $('#tb__ID').find("input[name='"+field+"']").on('click',function(){
+                            _set_value(this.value,_records,I,field);
+                        })
+                    break;
+                }
+            })
+        }
+        //----------------------------------
+        _before_submit_form=function(){
+            if($('#tb__ID').find('input[name=SB1]:checked').val()===undefined){ alert("Please answer question 1"); return false; }
+            if($('#tb__ID').find('input[name=SB2]:checked').val()===undefined){ alert("Please answer question 2"); return false; }
+            if($('#tb__ID').find('input[name=SB3]:checked').val()===undefined){ alert("Please answer question 3"); return false; }
+            if($('#tb__ID').find('input[name=SB4]:checked').val()===undefined){ alert("Please answer question 4"); return false; }
+            if($('#tb__ID').find('input[name=SB5]:checked').val()===undefined){ alert("Please answer question 5"); return false; }
+            if($('#tb__ID').find('input[name=SB6]:checked').val()===undefined){ alert("Please answer question 6"); return false; }
+            if($('#tb__ID').find('input[name=SB7]:checked').val()===undefined){ alert("Please answer question 7"); return false; }
+            if($('#tb__ID').find('input[name=SB8]:checked').val()===undefined){ alert("Please answer question 8"); return false; }
+            if($('#tb__ID').find('input[name=SB9]:checked').val()===undefined) { alert("Please answer question 9"); return false; }
+
+            var v1=parseInt($('#tb__ID').find('input[name=SB1]:checked').val());
+        	var v2=parseInt($('#tb__ID').find('input[name=SB2]:checked').val());
+        	var v3=parseInt($('#tb__ID').find('input[name=SB3]:checked').val());
+        	var v4=parseInt($('#tb__ID').find('input[name=SB4]:checked').val());
+        	var v5=parseInt($('#tb__ID').find('input[name=SB5]:checked').val());
+        	var v6=parseInt($('#tb__ID').find('input[name=SB6]:checked').val());
+        	var v7=parseInt($('#tb__ID').find('input[name=SB7]:checked').val());
+        	var v8=parseInt($('#tb__ID').find('input[name=SB8]:checked').val());
+            var v9=parseInt($('#tb__ID').find('input[name=SB9]:checked').val());
+
+        	var v10=v1+v2+v3+v4+v5+v6+v7+v8+v9;
+            _records[I].SB=v10;
+            return true;
+        }
+        //----------------------------------
+    }
+</script>
+<style>
+    VmInclude:__COMPONENT__/toolbar/toolbar.css
+    VmInclude:__COMPONENT__/grid/form.css
+    #tb__ID tr td:nth-child(2),
+    #tb__ID tr td:nth-child(3),
+    #tb__ID tr td:nth-child(4),
+    #tb__ID tr td:nth-child(5)
+    {
+        text-align: center;
+        padding:10px;
+        margin:auto;
+    }
+</style>

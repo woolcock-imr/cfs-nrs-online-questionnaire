@@ -8,12 +8,12 @@
         </table>
     </form>
 </section>
-<section style='margin:auto'>
+<section style="margin:auto;height:1000;width:800">
     VmInclude:__COMPONENT__/toolbar/back_save.html
-    <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="1100" height="800" align="middle">
+    <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="1000" height="800" margin="auto">
         <param value="__CURRENT_PATH__/flash/LCT.swf"/>
         <!--[if !IE]>-->
-        <object type="application/x-shockwave-flash" data="__CURRENT_PATH__/flash/LCT.swf" width="1100" height="800">
+        <object type="application/x-shockwave-flash" data="__CURRENT_PATH__/flash/LCT.swf" width="1000" height="800" margin="auto">
             <param value="__CURRENT_PATH__/flash/LCT.swf"/>
         <!--<![endif]-->
             <a href="//www.adobe.com/go/getflash">
@@ -74,4 +74,11 @@
 </script>
 <style>
     VmInclude:__COMPONENT__/toolbar/toolbar.css
+
+section{
+    overflow:scroll;
+    height:100%;
+
+}
+
 </style>
