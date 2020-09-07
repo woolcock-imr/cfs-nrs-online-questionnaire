@@ -143,7 +143,7 @@
 					],
 				 "Morning Testing" : [
 					{"table_id":"20011303","task_name":"Morning Karolinska Sleepiness Scale 2"},
-		  		{"table_id":"91000183","task_name":"Morning Finger Tapping Task 6 Minutes"},
+		  		{"table_id":"91000184","task_name":"Morning Finger Tapping Task 6 Minutes"},
 					{"table_id":"20011305","task_name":"Morning Mental Fatigue Scale 1"},
 		  		{"table_id":"20011306","task_name":"Morning Mental Fatigue Scale 2"},
 		  		{"table_id":"20011304","task_name":"Morning Karolinska Sleepiness Scale 3"}
