@@ -111,17 +111,21 @@
 
 		"quest_list":{
 		   "list":{
-		     "CFS Screening":[
-				{"table_id":"20010403","task_name":"Screening_ESS"},
-		 		{"table_id":"20010399","task_name":"Screening_MFSI"},
-		 		{"table_id":"20010400","task_name":"Screening Pittsburgh Sleep Quality Index (PSQI)"},
-		 		{"table_id":"20010401","task_name":"Screening Depression Anxiety Stress Scale"},
-		 		{"table_id":"20010402","task_name":"Screening Chalder Fatigue Scale"},
-		 		{"table_id":"20010405","task_name":"Screening Short form Health Survey"},
-				{"table_id":"20010404","task_name":"Screening Canadian Consensus Severity Scale"},
-				{"table_id":"20010405","task_name":"Restorative Sleep Questionnaire (Daily)"},
-				{"table_id":"91000186","task_name":"Restorative Sleep Questionnaire (Weekly)"},
+		     "ALL Screening Questionnaires (NRS group) ":[
 		    {"table_id":"91000880","task_name":"Screening StopBANG Questionnaire"},
+				{"table_id":"20010403","task_name":"Screening Epworth Sleepiness Scale (ESS)"},
+		 		{"table_id":"20010400","task_name":"Screening Pittsburgh Sleep Quality Index (PSQI)"},
+		 		{"table_id":"20010402","task_name":"Screening Chalder Fatigue Scale"},
+		 		{"table_id":"20010401","task_name":"Screening Depression Anxiety Stress Scale"},
+				{"table_id":"91000186","task_name":"Restorative Sleep Questionnaire (Weekly)"},
+				{"table_id":"20010401111","task_name":"Restorative Sleep Questionnaire (Daily)"}
+				 ],
+				 "CFS Additional Screening Questionnaires":[
+		 		{"table_id":"20010405","task_name":"Screening Short form Health Survey"},
+		 		{"table_id":"20010399","task_name":"Screening Multidimensional Fatigue Symptom Inventory"},
+				{"table_id":"20010404","task_name":"Screening Canadian Consensus Severity Scale"}
+				 ],
+				 "INS and CTRL Additional Screening Questionnaires":[
 				{"table_id":"91000881","task_name":"Screening Insomnia Severity Index"}
 				 ],
 			 "Baseline Evening Questionnaires":[
