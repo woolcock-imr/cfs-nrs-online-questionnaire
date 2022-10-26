@@ -20,7 +20,7 @@
 		"Screening_IncluExclu_form":{"table_id":"20010398","url":"modules/edc/task/IncluExclu.form.html"},
 
 
-		"Screening_ESS":{"table_id":"20010403","url":"modules/edc/task/Epworth_Sleepiness_Scale.html","name_for_search":"Screening Epworth Sleepiness Scale (ESS)","form_module":"Screening_ESS_form","task":"Screening Epworth Sleepiness Scale (ESS)"},
+		"Screening_ESS":{"table_id":"20010403","url":"modules/edc/task/Epworth_Sleepiness_Scale.html","name_for_search":"Screening Epworth Sleepiness Scale (ESS)","form_module":"Screening_ESS_form","task_name":"Screening Epworth Sleepiness Scale (ESS)"},
 		"Screening_ESS_form":{"table_id":"20010403","url":"modules/edc/task/Epworth_Sleepiness_Scale_form.html"},
 		"Screening_MFSI":{"table_id":"20010399","url":"modules/edc/task/mfsi.html","name_for_search":"Screening Multidimensional Fatigue Symptom Inventory","form_module":"Screening_MFSI_form","task":"Screening Multidimensional Fatigue Symptom Inventory (MFSI-SF)"},
 		"Screening_MFSI_form":{"table_id":"20010399","url":"modules/edc/task/mfsi_form.html"},
@@ -38,11 +38,8 @@
 		"Screening_SB_form":{"table_id":"91000880","url":"modules/edc/task/stopbang-form.html"},
 		"Screening_ISI":{"table_id":"91000881","url":"modules/edc/task/isi-data.html","name_for_search":"Insomnia Severity Index","form_module":"Screening_ISI_form","task":"Screening ISI"},
 		"Screening_ISI_form":{"table_id":"91000881","url":"modules/edc/task/isi-form.html"},
-		"Screening_wristox":{"table_id":"91000879","url":"modules/edc/task/wristox-data.html","name_for_search":"wristox","task":"Screening wristox"},
-		"screening_ffs":{"table_id":"91000907","url":"modules/edc/task/Flinders.html","name_for_search":"Flinder's Fatigue Scale","form_module":"screening_ffs_form","task":"Screening Flinders Fatigue Scale"},
-		"screening_ffs_form":{"table_id":"91000907","url":"modules/edc/task/Flinders_form.html"},
-		"screening_hs":{"table_id":"91000908","url":"modules/edc/task/hyperarousal_scale.html","name_for_search":"Hyperarousal Scale","form_module":"screening_hs_form","task":"Screening Hyperarousal Scale"},
-		"screening_hs_form":{"table_id":"91000908","url":"modules/edc/task/hyperarousal_scale_f.html"},
+		"Screening_wristox":{"table_id":"91000879","url":"modules/edc/task/wristox-data.html","name_for_search":"wristox","form_module":"Screening_wristox_form","task":"Screening wristox"},
+		"Screening_wristox_form":{"table_id":"91000879","url":"modules/edc/task/wristox-form.html"},
 
 		
 		"RSQ_D":{"table_id":"20010405","url":"modules/edc/task/RSQ_D.html","name_for_search":"Restorative Sleep Questionnaire (Daily)","form_module":"RSQ_D_Form","task":"Restorative Sleep Questionnaire_ Daily"},
@@ -78,8 +75,8 @@
 
 		"Morning_visit_KDT":{"table_id":"20010413","url":"modules/edc/task/KDT.html","name_for_search":"Baseline Start Karolinska Drowsiness Test (KDT)"},
 		"Morning_ERP":{"table_id":"20010415","url":"modules/edc/task/ERP.html","name_for_search":"Morning Event Related Potential","form_module":"Morning_ERP","task":"Morning Event Related Potential"},
-		"Morning_PASAT":{"table_id":"20010417","url":"modules/edc/task/pasat.html","name_for_search":"Morning Paced Auditory Serial Addition Test","form_module":"Morning_PASAT","task":"Morning Paced Auditory Serial Addition Tests (PASAT)"},
-		"Morning_PASAT_Form":{"table_id":"20010417","url":"modules/edc/task/pasat_form.html"},
+		"Morning_PASAT":{"table_id":"20010417","url":"modules/edc/task/PASAT.html","name_for_search":"Morning Paced Auditory Serial Addition Test","form_module":"Morning_PASAT","task":"Morning Paced Auditory Serial Addition Tests (PASAT)"},
+		"Morning_PASAT_Form":{"table_id":"20010417","url":"modules/edc/task/PASAT_form.html"},
 		"Morning_BloodSaliva":{"table_id":"20010419","url":"modules/edc/task/Bloodsaliva.html","name_for_search":"Morning Blood and Saliva Samples"},
 		"Morning_MRI":{"table_id":"20010420","url":"modules/edc/task/MRI.html","name_for_search":"Magnetic Resonance Imagining (MRI)"},
 		"Morning_KDT":{"table_id":"91000187","url":"modules/edc/task/KDT.html"},
@@ -109,36 +106,27 @@
 		"kss_Quest3":{"table_id":"20011304","url":"modules/edc/task/kss.QUEST.html"},
 		"Morning_Memorytask_Fileupload":{"table_id":"20011341","url":"modules/edc/task/File_upload.html"},
 		"NightVisit_Memorytask_Fileupload":{"table_id":"20011129","url":"modules/edc/task/Memtest.html","name_for_search":"Evening Memory task tests"},
-		"wordpairs_scores": {"table_id":"20011129","url":"modules/edc/task/wordpair_score.html"},
-		"pasat_scores": {"table_id":"20010417","url":"modules/edc/task/pasat.html"},
-		"visit_anthro": {"table_id":"91000909","url":"modules/edc/task/Anthro.html"},
-		
-		"edc-notes":	  {"table_id":"20010379","url":"/modules/participant-and-others/task/edc-notes.html", "name_for_search":"EDC notes"},
-		"login-setup":	  {"table_id":"20010380","url":"/modules/participant-and-others/task/participant-login-setup.html", "name_for_search":"Login setup"},
-		"new-lct-form":   {"url":"modules/m/neurocog/letter-cancellation-form.html"},
-		
-	
-	
-	"quest_list":{
-				"list":{
-					"Screening Questionnaires":[
+
+
+
+		"quest_list":{
+		   "list":{
+		     "ALL Screening Questionnaires (NRS group) ":[
+		    {"table_id":"91000880","task_name":"Screening StopBANG Questionnaire"},
+				{"table_id":"20010403","task_name":"Screening Epworth Sleepiness Scale (ESS)"},
+		 		{"table_id":"20010400","task_name":"Screening Pittsburgh Sleep Quality Index (PSQI)"},
 		 		{"table_id":"20010402","task_name":"Screening Chalder Fatigue Scale"},
 		 		{"table_id":"20010401","task_name":"Screening Depression Anxiety Stress Scale"},
-				{"table_id":"20010403","task_name":"Screening Epworth Sleepiness Scale (ESS)"},
-				{"table_id":"91000881","task_name":"Screening Insomnia Severity Index"},
-				{"table_id":"91000907","task_name":"Screening Flinders Fatigue Scale"},
-				{"table_id":"91000908","task_name":"Screening Hyperarousal Scale"},
-		 		{"table_id":"20010399","task_name":"Screening Multidimensional Fatigue Symptom Inventory"},
-		 		{"table_id":"20010400","task_name":"Screening Pittsburgh Sleep Quality Index (PSQI)"},
-		 		{"table_id":"20010405","task_name":"Screening Short form Health Survey"}
-				 ],
-				"Others":[
-				{"table_id":"20010401111","task_name":"Restorative Sleep Questionnaire (Weekly)"},
+				{"table_id":"91000186","task_name":"Restorative Sleep Questionnaire (Weekly)"},
 				{"table_id":"20010401111","task_name":"Restorative Sleep Questionnaire (Daily)"}
-
 				 ],
 				 "CFS Additional Screening Questionnaires":[
+		 		{"table_id":"20010405","task_name":"Screening Short form Health Survey"},
+		 		{"table_id":"20010399","task_name":"Screening Multidimensional Fatigue Symptom Inventory"},
 				{"table_id":"20010404","task_name":"Screening Canadian Consensus Severity Scale"}
+				 ],
+				 "INS and CTRL Additional Screening Questionnaires":[
+				{"table_id":"91000881","task_name":"Screening Insomnia Severity Index"}
 				 ],
 			 "Baseline Evening Questionnaires":[
 			   {"table_id":"20010408","url":"modules/edc/task/Flinders.html","task_name":"Flinders Fatigue Scale"}
@@ -155,7 +143,7 @@
 					],
 				 "Morning Testing" : [
 					{"table_id":"20011303","task_name":"Morning Karolinska Sleepiness Scale 2"},
-		  		{"table_id":"91000183","task_name":"Morning Finger Tapping Task 6 Minutes"},
+		  		{"table_id":"91000184","task_name":"Morning Finger Tapping Task 6 Minutes"},
 					{"table_id":"20011305","task_name":"Morning Mental Fatigue Scale 1"},
 		  		{"table_id":"20011306","task_name":"Morning Mental Fatigue Scale 2"},
 		  		{"table_id":"20011304","task_name":"Morning Karolinska Sleepiness Scale 3"}
