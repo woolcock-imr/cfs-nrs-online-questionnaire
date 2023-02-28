@@ -66,9 +66,9 @@
             })
         }
         //----------------------------------
-        _before_submit=function(record,dbv){
-            return _set_status_and_participant(record,dbv);
-        }
+        // _before_submit=function(record,dbv){
+        //     return _set_status_and_participant(record,dbv);
+        // }
         //-------------------------------------
         _before_submit_form=function(){
             if( $('#tb__ID').find('input[name=FFS1]:checked').val()===undefined){ alert("Please answer question 1"); return false; }
